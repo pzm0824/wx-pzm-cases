@@ -1,0 +1,95 @@
+.bg-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+swiper.square-dot .wx-swiper-dot {
+  background: #fff;
+  opacity: 0.4;
+  width: 5px !important;
+  height: 5px !important;
+  border-radius: 10px !important;
+  transition: all 0.3s ease-in-out 0s !important;
+}
+
+swiper.square-dot .wx-swiper-dot.wx-swiper-dot-active {
+  opacity: 1;
+  width: 15px !important;
+}
+
+swiper.round-dot .wx-swiper-dot {
+  /* background: #39b54a; */
+  width: 5px !important;
+  height: 5px !important;
+  top: -2px !important;
+  transition: all 0.3s ease-in-out 0s !important;
+  position: relative;
+}
+
+swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: 0px;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+  border-radius: 10px;
+}
+
+swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
+  width: 9px !important;
+  height: 9px !important;
+  top: 0px !important;
+}
+
+.card-swiper {
+  height: 420rpx;
+}
+
+.card-swiper swiper-item {
+  width: 610rpx !important;
+  left: 70rpx !important;
+  box-sizing: border-box;
+  padding: 10px 0px 30px;
+  overflow: initial !important;
+}
+
+.card-swiper swiper-item .bg-img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  border-radius: 5px;
+  transform: scale(0.9);
+  transition: all 0.2s ease-in 0s;
+}
+
+.card-swiper swiper-item.cur .bg-img {
+  transform: none;
+  transition: all 0.2s ease-in 0s;
+}
+
+.shadow-blur {
+  position: relative;
+}
+
+.shadow-blur::before {
+  content: "";
+  display: block;
+  background: inherit;
+  filter: blur(5px);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 5px;
+  left: 5px;
+  z-index: -1;
+  opacity: 0.4;
+  transform-origin: 0 0;
+  border-radius: inherit;
+  transform: scale(1, 1);
+}

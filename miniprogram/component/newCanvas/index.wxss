@@ -1,0 +1,5 @@
+/* component/newCanvas/index.wxss */
+.board {
+  position: fixed;
+  top: 2000rpx;
+}

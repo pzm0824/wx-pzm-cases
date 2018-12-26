@@ -1,0 +1,18 @@
+<!--pages/list/index.wxml-->
+<view class='pzm-page1'>
+  <view class='title'>Elements 元素</view>
+  <navigator url="../{{item.name}}/index" class="nav-list" wx:for="{{elements}}" wx:key="{{index}}">
+    <view class="nav-title">{{item.title}}</view>
+    <view class="nav-name">{{item.name}}</view>
+    <view class="iconfont icon-right"></view>
+  </navigator>
+</view>
+
+<view class='pzm-page1'>
+  <view class='title'>实例</view>
+  <navigator url="../{{item.name}}/index" class="nav-list" wx:for="{{cases}}" wx:key="{{index}}">
+    <view class="nav-title">{{item.title}}</view>
+    <view class="nav-name">{{item.name}}</view>
+    <view class="iconfont icon-right"></view>
+  </navigator>
+</view>

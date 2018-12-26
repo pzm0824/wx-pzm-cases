@@ -1,0 +1,24 @@
+/**app.wxss**/
+
+@import "icon.wxss" ;
+@import "color.wxss";
+@import "font.wxss";
+@import "margin.wxss";
+@import "flex.wxss";
+page {
+  font-size: 28rpx;
+  color: #333;
+  line-height: 1.4;
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+  background-color: #f1f1f1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+view{
+  box-sizing: border-box;
+}

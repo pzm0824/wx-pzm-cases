@@ -1,0 +1,78 @@
+<!--pages/button/index.wxml-->
+<view class="bar solid-bottom">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text'></text>
+    <text class='text-df ml-xs'>按钮类型</text>
+  </view>
+</view>
+<view class='doc-main'>
+  <pzm-button class='default' pzm-class='btn-mr'>默认按钮</pzm-button>
+  <pzm-button type="success" pzm-class='btn-mr'>成功按钮</pzm-button>
+  <pzm-button type="danger" pzm-class='btn-mr'>危险按钮</pzm-button>
+  <pzm-button type="warning" pzm-class='btn-mr'>警告按钮</pzm-button>
+</view>
+
+
+<view class="bar solid-bottom mt-sm">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text'></text>
+    <text class='text-df ml-xs'>按钮禁用</text>
+  </view>
+</view>
+<view class='doc-main'>
+  <pzm-button disabled pzm-class='btn-mr'>禁用状态</pzm-button>
+  <pzm-button type="warning" disabled pzm-class='btn-mr'>禁用状态</pzm-button>
+</view>
+
+
+<view class="bar solid-bottom mt-sm">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text'></text>
+    <text class='text-df ml-xs'>加载按钮</text>
+  </view>
+</view>
+<view class='doc-main'>
+  <pzm-button type='success' loading="true" pzm-class='btn-mr'>提交</pzm-button>
+  <pzm-button type='warning' loading="true" pzm-class='btn-mr'>提交</pzm-button>
+</view>
+
+<view class="bar solid-bottom mt-sm">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text'></text>
+    <text class='text-df ml-xs'>图形按钮</text>
+  </view>
+</view>
+<view class='doc-main'>
+  <pzm-button type='success' shipe='circle' pzm-class='btn-mr iconfont icon-appreciate'>
+    点赞
+  </pzm-button>
+  <pzm-button   shape='circle'  pzm-class='btn-mr iconfont icon-locationfill btn-bgc'> 
+  </pzm-button>
+</view>
+
+<view class="bar solid-bottom mt-sm">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text'></text>
+    <text  class='text-df ml-xs'>按钮形状</text>
+  </view>
+</view>
+<view class='doc-main'>
+  <pzm-button shape="circle" type='success' pzm-class='btn-mr'>圆形按钮</pzm-button>
+  <pzm-button shape="square" type='warning' pzm-class='btn-mr'>方形按钮</pzm-button>
+</view>
+
+<view class="bar solid-bottom mt-sm">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text'></text>
+    <text class='text-df ml-xs'>按钮尺寸</text>
+  </view>
+</view>
+<view class='doc-main'>
+  <pzm-button size='large' pzm-class='btn-mt'>大号按钮</pzm-button>
+
+  <pzm-button size='default' pzm-class='btn-mr'>普通按钮</pzm-button>
+  <pzm-button size='small' pzm-class='btn-mr'>小型按钮</pzm-button>
+
+  <pzm-button size='mini' pzm-class='btn-mr'>迷你按钮</pzm-button>
+
+</view>

@@ -1,0 +1,25 @@
+<view class="goods-list-li">
+  <slot name='before'></slot>
+
+  <view class='goods-list-main'>
+    <image src='{{img_url}}' mode='aspectFill' class='goods-list-img'></image>
+    <view class='goods-list-text'>
+      <view class='goods-list-top'>
+        <view class='text-lg text-two-line'>{{title}} </view>
+        <view class='gray-text text-sm text-one-line des'>{{des}}</view>
+      </view>
+      <view class='goods-list-foot'>
+        <view class='goods-list-price'>
+          {{now_price}}
+          <text class='gray-text'>{{old_price}}</text>
+        </view>
+
+        <button class='danger btn sm' bindtap='buy'>
+          去购买
+          <text class='iconfont icon-right'></text>
+        </button>
+        <slot name='after'></slot>
+      </view>
+    </view>
+  </view>
+</view>

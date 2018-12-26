@@ -1,0 +1,69 @@
+.text-xs {
+  font-size: 20rpx;
+}
+
+.text-sm {
+  font-size: 24rpx;
+}
+
+.text-df {
+  font-size: 28rpx;
+}
+
+.text-lg {
+  font-size: 32rpx;
+}
+
+.text-xl {
+  font-size: 36rpx;
+}
+
+.text-xxl {
+  font-size: 40rpx;
+}
+
+/* 边框 */
+.solid-bottom::after, .solid-left::after, .solid-right::after, .solid-top::after,
+.solid::after {
+  content: " ";
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  pointer-events: none;
+}
+.solid::after {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.solid-top::after {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.solid-right::after {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.solid-bottom::after {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.solid-left::after {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.text-24{
+  font-size: 24rpx;
+}
+.text-28{
+  font-size: 28rpx;
+}
+.text-30{
+  font-size: 30rpx;
+}

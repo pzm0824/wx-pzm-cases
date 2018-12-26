@@ -1,0 +1,2 @@
+<pzm-card wx:for="{{goods_list}}" title='{{item.title}}' des='{{item.des}}' img_url="{{item.img_url}}" now_price="{{item.now_price}}" old_price="{{item.old_price}}" bind:click='buy' data-base='{{item}}'>
+</pzm-card>

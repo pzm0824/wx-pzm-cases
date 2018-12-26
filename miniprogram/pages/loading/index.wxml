@@ -1,0 +1,45 @@
+<!--pages/loading/index.wxml-->
+<view class="bar solid-bottom">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text'></text>
+    <text class='text-df ml-xs'>默认加载中</text>
+  </view>
+</view>
+<view class='doc-main'>
+  <pzm-loading-end></pzm-loading-end>
+</view>
+
+<view class="bar solid-bottom mt-sm">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text'></text>
+    <text class='text-df ml-xs'>默认加载完成</text>
+  </view>
+</view>
+<view class='doc-main'>
+  <pzm-loading-end is-end="{{true}}"></pzm-loading-end>
+</view>
+
+
+<view class="bar solid-bottom mt-sm">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text'></text>
+    <text class='text-df ml-xs'>
+      自定义加载中icon 
+    </text>
+  </view>
+</view>
+<view class='doc-main'>
+  <pzm-loading-end icon="https://s10.mogucdn.com/mlcdn/c45406/171018_8gj08gbl9fj6igb380dec9k1ifhe2_32x32.png"></pzm-loading-end>
+</view>
+
+<view class="bar solid-bottom mt-sm">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text'></text>
+    <text class='text-df ml-xs'>自定义加载完成icon</text>
+  </view>
+</view>
+<view class='doc-main'>
+  <pzm-loading-end
+   text="加载完成"
+   is-end="{{true}}" icon="https://s10.mogucdn.com/mlcdn/c45406/171016_47j96cl3hdhhdf7ajg8hg2kd13gdc_400x400.png"></pzm-loading-end>
+</view>

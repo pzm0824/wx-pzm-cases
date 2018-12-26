@@ -1,0 +1,23 @@
+<!-- swiper -->
+<import src="../template/swiper/index.wxml" />
+<import src="../template/tab-nav/index.wxml" />
+<import src="../template/bar/index.wxml" />
+<import src="../template/x-scroll/index.wxml" />
+<import src="../template/card-list/index.wxml" />
+
+<!-- swiper -->
+<template is="SwiperIndex" data="{{swiper_list,cardCur}}"></template>
+
+<!-- tab-nav -->
+<template is="TabNav" data="{{scroll_left}}"></template>
+
+<!-- bar -->
+<template is="Bar"></template>
+
+<!-- x-scroll -->
+<template is="XScroll"></template>
+
+<template is="Bar"></template>
+<template is="CardList"></template>
+
+

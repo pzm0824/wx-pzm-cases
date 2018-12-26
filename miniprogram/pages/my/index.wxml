@@ -1,0 +1,2 @@
+<!--pages/my/index.wxml-->
+<pzm-button type="primary" size="small">潘志猛</pzm-button>

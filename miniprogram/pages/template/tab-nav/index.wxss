@@ -1,0 +1,68 @@
+.icon-nav-box{
+  position: relative;
+  width: 100%;
+  overflow-x: auto;
+  z-index: 888;
+}
+
+.icon-nav-box .icon-nav{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30rpx 0;
+  height: 360rpx;
+  width: 1125rpx;
+  background: #fff;
+}
+.icon-nav-box .icon-nav-navigator{
+  margin: 10rpx 0;
+  display: block;
+  width: 187.5rpx;
+  line-height: 0;
+  text-align: center;
+}
+.icon-nav-navigator .iconfont{
+  position: relative;
+  display: inline-block;
+  width: 80rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 40rpx;
+  border-radius: 50%;
+  color: #fff;
+}
+.icon-nav-navigator .icon-nav-text{
+  margin-top: 10rpx;
+  display: block;
+  font-size: 24rpx;
+  color: #888;
+  line-height: 40rpx;
+}
+.icon-nav-navigator .iconfont{
+  background-color:rgb(94, 185, 94);
+}
+
+.icon-bar-box {
+  position: relative;
+  background: #fff;
+  /* margin-top: -20rpx; */
+  height: 20rpx;
+  z-index: 889;
+}
+
+.icon-bar {
+  position: absolute;
+  background: #eee;
+  width: 40%;
+  margin: auto;
+  bottom: 8px;
+  height: 5rpx;
+  left: 0;
+  right: 0;
+}
+
+.icon-bar-dot {
+  background: #39b54a;
+  width: 80%;
+  height: 5rpx;
+}

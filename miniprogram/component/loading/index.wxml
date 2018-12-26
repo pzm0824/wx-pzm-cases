@@ -1,0 +1,20 @@
+<view class="loadmore" wx:if="{{iconStatus && iconType}}">
+  <block wx:if="{{isEnd}}">
+    <view class="line"></view>
+
+    <image wx:if="{{!text && iconStatus === iconType.HIDDEN}}" class="loading-icon" src="{{ type.icon }}" mode="aspectFill"></image>
+
+    <image wx:if="{{iconStatus === iconType.SHOW_DEFAULT}}" class="loading-icon" src="{{ type.icon }}" mode="aspectFill"></image>
+
+    <image wx:if="{{iconStatus === iconType.SHOW_CONFIG}}" class="loading-icon" src="{{ icon }}" mode="aspectFill"></image>
+
+    <text class="text">{{ text || type.text }}</text>
+    <view class="line"></view>
+  </block>
+
+  <view wx:else class="wrap">
+    <view wx:if="{{iconStatus === iconType.SHOW_DEFAULT}}" class="loadmore__loading-icon"></view>
+    <image wx:if="{{iconStatus === iconType.SHOW_CONFIG}}" class="loading-icon-more" src="{{ icon }}" mode="aspectFill"></image>
+    <text class="loading-text">{{ text || '加载中...' }}</text>
+  </view>
+</view>

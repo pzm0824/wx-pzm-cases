@@ -1,0 +1,148 @@
+.pzm-btn {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  white-space: nowrap;
+  user-select: none;
+  font-size: 28rpx;
+  border-radius: 4rpx;
+  border: 0 !important;
+  position: relative;
+  text-decoration: none;
+  height: 88rpx;
+  line-height: 88rpx;
+  box-shadow: inset 0 0 0 1rpx rgba(0, 0, 0, 0.1);
+  color: #fff !important;
+  background: #f7f7f7 !important;
+  color: #495060 !important;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+
+.pzm-btn-hover {
+  opacity: 0.9;
+}
+
+.pzm-btn-long {
+  border-radius: 0;
+  margin: 0;
+  box-shadow: none;
+}
+
+.pzm-btn-large {
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.pzm-btn-default {
+  font-size: 28rpx;
+  line-height: 88rpx;
+}
+
+.pzm-btn-small {
+  font-size: 24rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 0 16rpx;
+}
+
+.pzm-btn-mini {
+  padding: 0 8rpx;
+  font-size: 20rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+
+.pzm-btn-primary {
+  color: #fff !important;
+  background: #2d8cf0 !important;
+}
+
+.pzm-btn-ghost {
+  color: #fff !important;
+  background: #fff !important;
+  color: #495060 !important;
+}
+
+.pzm-btn-success {
+  color: #fff !important;
+  border: 1px solid #19be6b !important;
+  background: #19be6b !important;
+}
+
+.pzm-btn-warning {
+  color: #fff !important;
+  border: 1px solid #ff976a !important;
+  background: #ff976a !important;
+}
+
+.pzm-btn-danger {
+  color: #fff !important;
+  border: 1px solid #ed3f14 !important;
+  background: #ed3f14 !important;
+}
+
+.pzm-btn-info {
+  color: #fff !important;
+  background: #2db7f5 !important;
+  border: 1px solid #2db7f5 !important;
+}
+
+.pzm-btn-circle {
+  border-radius: 44rpx;
+}
+
+.pzm-btn-large.pzm-btn-circle {
+  border-radius: 48rpx;
+}
+
+.pzm-btn-small.pzm-btn-circle {
+  border-radius: 40rpx;
+}
+
+.pzm-btn-loading {
+  opacity: 0.7;
+}
+
+.pzm-btn-loading-inner {
+  display: inline-block;
+  margin-right: 12rpx;
+  vertical-align: middle;
+  width: 14rpx;
+  height: 14rpx;
+  background: 0 0;
+  border-radius: 50%;
+  border: 2rpx solid #fff;
+  border-color: #fff #fff #fff transparent;
+  animation: btn-spin 0.6s linear;
+  animation-iteration-count: infinite;
+}
+
+.pzm-btn-disabled {
+  opacity: .6;
+  /* color: #bbbec4 !important;
+  background: #f7f7f7 !important;
+  border: 1px solid #f7f7f7 !important; */
+}
+
+.pzm-btn-inline {
+  display: inline-block;
+}
+
+.pzm-btn-plain {
+  background-color: #fff !important;
+}
+
+@keyframes btn-spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

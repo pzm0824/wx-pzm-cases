@@ -1,0 +1,63 @@
+<template name="XScroll">
+  <scroll-view scroll-x="true" class='card-x-scroll-box'>
+
+    <view class='card-list-box'>
+
+      <view class='card-list-li'>
+        <navigator>
+          <view class='card-list-img'>
+            <image mode="aspectFill" src='http://pic1.win4000.com/wallpaper/3/543c9f65433d0.jpg'></image>
+          </view>
+          <view class='card-list-msg text-24'>测试111</view>
+
+        </navigator>
+      </view>
+      <view class='card-list-li'>
+        <navigator>
+          <view class='card-list-img'>
+            <image mode="aspectFill" src='http://pic1.win4000.com/wallpaper/3/543c9f65433d0.jpg'></image>
+          </view>
+          <view class='card-list-msg text-24'>测试111</view>
+
+        </navigator>
+      </view>
+      <view class='card-list-li'>
+        <navigator>
+          <view class='card-list-img'>
+            <image mode="aspectFill" src='http://pic1.win4000.com/wallpaper/3/543c9f65433d0.jpg'></image>
+          </view>
+          <view class='card-list-msg text-24'>测试111</view>
+
+        </navigator>
+      </view>
+      <view class='card-list-li'>
+        <navigator>
+          <view class='card-list-img'>
+            <image mode="aspectFill" src='http://pic1.win4000.com/wallpaper/3/543c9f65433d0.jpg'></image>
+          </view>
+          <view class='card-list-msg text-24'>测试111</view>
+
+        </navigator>
+      </view>
+      <view class='card-list-li'>
+        <navigator>
+          <view class='card-list-img'>
+            <image mode="aspectFill" src='http://pic1.win4000.com/wallpaper/3/543c9f65433d0.jpg'></image>
+          </view>
+          <view class='card-list-msg text-24'>测试111</view>
+
+        </navigator>
+      </view>
+      <view class='card-list-li'>
+        <navigator>
+          <view class='card-list-img'>
+            <image mode="aspectFill" src='http://pic1.win4000.com/wallpaper/3/543c9f65433d0.jpg'></image>
+          </view>
+          <view class='card-list-msg text-24'>测试111</view>
+
+        </navigator>
+      </view>
+    </view>
+
+  </scroll-view>
+</template>

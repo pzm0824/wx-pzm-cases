@@ -1,0 +1,24 @@
+
+
+.mt-sm {
+  margin-top: 20rpx;
+}
+
+.mr-sm {
+  margin-right: 20rpx;
+}
+
+.mb-sm {
+  margin-bottom: 20rpx;
+}
+
+.ml-sm {
+  margin-left: 20rpx;
+}
+.m-xs{
+  margin:10rpx;
+
+}
+.mr-20{
+  margin-left: 20rpx;
+}

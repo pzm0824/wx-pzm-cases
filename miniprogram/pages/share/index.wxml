@@ -1,0 +1,20 @@
+<button class='share' size="samll" type="primary" bindtap="share">分享</button>
+
+
+<view wx:if="{{mask_flag}}" bindtap='closeShare' class='mask'></view>
+<view wx:if="{{share_mask}}" class='mask-bottom'>
+  <view class='mask-bottom-left' bindtap="shareOne">
+    <text class='mask-txt'>分享给好友</text>
+  </view>
+  <view class='mask-bottom-left' bindtap="eventDraw">
+    <text>分享到朋友圈</text>
+  </view>
+</view>
+
+<view class="mark-share {{share_img_flag==true?'on':''}}">
+  <image src="{{shareImage}}" class="share-image"></image>
+  <pzm-canvas painting="{{painting}}" class="canvasdrawer" bind:getImage="eventGetImage" />
+
+  <button class='save-img' bind:tap="eventSave">保存到本地</button>
+  <text class='mark-share-txt'>保存到手机后，您可到朋友圈分享该商品图片</text>
+</view>

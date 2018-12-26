@@ -1,0 +1,26 @@
+<button
+    class="pzm-class pzm-btn {{ long ? 'pzm-btn-long' : '' }} {{ 'pzm-btn-' + size }} {{ 'pzm-btn-' + type }} {{ 'pzm-btn-' + shape }} {{ loading ? 'pzm-btn-loading' : '' }} {{ disabled ? 'pzm-btn-disabled' : ''}} {{ inline ? 'pzm-btn-inline' : '' }}
+    hover-class="pzm-btn-hover"
+    bindtap="handleTap"
+    open-type="{{ openType }}"
+    app-parameter="{{ appParameter }}"
+    hover-stop-propagation="{{ hoverStopPropagation }}"
+    hover-start-time="{{ hoverStartTime }}"
+    hover-stay-time="{{ hoverStayTime }}"
+    session-from="{{ sessionFrom }}"
+    send-message-title="{{ sendMessageTitle }}"
+    send-message-path="{{ sendMessagePath }}"
+    send-message-img="{{ sendMessageImg }}"
+    show-message-card="{{ showMessageCard }}"
+    bindcontact="bindcontact"
+    bindgetuserinfo="bindgetuserinfo"
+    bindgetphonenumber="bindgetphonenumber"
+    binddanger="binddanger"
+    plain="true"
+>
+<view class="pzm-btn-loading-inner" wx:if="{{loading}}"></view>
+
+<slot></slot>
+
+
+</button>

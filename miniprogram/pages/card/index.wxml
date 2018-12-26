@@ -1,0 +1,51 @@
+<!--pages/card/index.wxml-->
+<view class='pzm-card pzm-card-category' wx:if="{{list_flag==0}}">
+  <view class='pzm-card-con pzm-card-shadow pzm-card-loading' style='height:{{win_height}}px'>
+
+    <view class='pzm-card-category-left'>
+      <view class='flex card-category-left-list' style='padding:0 30rpx;justify-content:center'>
+        <view style='width:80rpx' class="pzm-card-loading-block pzm-card-category-text" />
+      </view>
+    </view>
+
+    <view class='pzm-card-category-right'>
+
+      <view class='flex'>
+        <block wx:for="{{list}}">
+          <view class='card-category-list' style='width:33%'>
+            <view class="pzm-card-loading-block pzm-card-category-img m-xs">
+
+            </view>
+            <view class="pzm-card-loading-block pzm-card-category-text m-xs">
+
+            </view>
+          </view>
+        </block>
+
+
+      </view>
+    </view>
+
+  </view>
+
+</view>
+
+
+
+<view class='pzm-card' wx:elif="{{list_flag==1}}">
+  <view class='pzm-card-con pzm-card-shadow'>
+    <view class='pzm-card-loading'>
+
+      <view class='flex'>
+        <view style='width:100%' class="pzm-card-loading-block" />
+      </view>
+      <view class='flex'>
+        <view style='width:40%' class="pzm-card-loading-block" />
+      </view>
+      <view class='flex'>
+        <view style='width:40%' class="pzm-card-loading-block m-xs" />
+        <view style='width:40%' class="pzm-card-loading-block m-xs" />
+      </view>
+    </view>
+  </view>
+</view>

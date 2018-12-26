@@ -1,0 +1,8 @@
+.bar{
+  position: relative;
+  margin-top: 20rpx;
+  display: flex;
+  height: 90rpx;
+  align-items: center;
+  background-color: #fff;
+}

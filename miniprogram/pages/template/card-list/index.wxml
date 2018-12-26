@@ -1,0 +1,31 @@
+<template name="CardList">
+  <view class='card-list-box normal'>
+    <view class='card-list-li'>
+      <view class='card-list-img'>
+        <image mode="aspectFill" src='http://i.shangc.net/2018/0513/20180513012805901.jpg'></image>
+      </view>
+      <view class='card-lits-msg'>测试1</view>
+
+    </view>
+    <view class='card-list-li'>
+      <view class='card-list-img'>
+        <image mode="aspectFill" src='http://i.shangc.net/2018/0513/20180513012805901.jpg'></image>
+      </view>
+      <view class='card-lits-msg'>测试1</view>
+
+    </view>
+    <view class='card-list-li'>
+      <view class='card-list-img'>
+        <image mode="aspectFill" src='http://i.shangc.net/2018/0513/20180513012805901.jpg'></image>
+      </view>
+      <view class='card-lits-msg'>测试1</view>
+
+    </view>
+    <view class='card-list-li'>
+      <view class='card-list-img'>
+        <image mode="aspectFill" src='http://i.shangc.net/2018/0513/20180513012805901.jpg'></image>
+      </view>
+      <view class='card-lits-msg'>测试1</view>
+    </view>
+  </view>
+</template>

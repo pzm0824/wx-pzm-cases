@@ -1,0 +1,114 @@
+.btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 13rpx 25rpx;
+  font-size: 28rpx;
+  text-align: center;
+  text-decoration: none;
+  line-height: initial;
+  border-radius: 5px;
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+  color: #000;
+  background-color: #f8f8f8;
+}
+
+.danger {
+  background: #dd514c;
+  color: #fff;
+}
+
+.sm.btn {
+  font-size: 24rpx;
+  height: 50rpx;
+  padding: 10rpx 20rpx;
+}
+
+.sm.btn.iconfont {
+  padding: 0;
+  width: 60rpx;
+  height: 60rpx;
+  font-size: 25rpx;
+}
+
+.text-sm {
+  font-size: 24rpx;
+}
+
+.text-df {
+  font-size: 28rpx;
+}
+
+.text-lg {
+  font-size: 32rpx;
+}
+
+.gray-text {
+  color: #888;
+}
+
+.goods-list-li {
+  background: #fff;
+  margin-bottom: 20rpx;
+  padding: 20rpx;
+}
+
+.goods-list-main {
+  display: flex;
+}
+
+.goods-list-img {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.goods-list-text {
+  flex: 1;
+  margin-left: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.text-two-line {
+  margin-bottom: 10rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.des{
+   width: 450rpx;
+}
+.text-one-line{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.goods-list-foot {
+  align-self: flex-end;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.goods-list-price {
+  color: #dd514c;
+  font-size: 36rpx;
+  flex: 1;
+}
+
+.goods-list-price text::before, .goods-list-price::before {
+  content: "¥ ";
+  font-size: 120%;
+}
+
+.goods-list-price text {
+  text-decoration: line-through;
+  font-size: 24rpx;
+}

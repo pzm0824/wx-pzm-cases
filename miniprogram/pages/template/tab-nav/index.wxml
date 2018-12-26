@@ -1,0 +1,69 @@
+<template name="TabNav">
+  <scroll-view scroll-x="true" bindscroll="navScroll" class='icon-nav-box'>
+    <view class='icon-nav'>
+      <navigator class='icon-nav-navigator'>
+        <text class='iconfont icon-picfill'></text>
+        <text class='icon-nav-text'>图集1</text>
+      </navigator>
+
+      <navigator class="icon-nav-navigator">
+        <text class="iconfont icon-picfill"></text>
+        <text class="icon-nav-text">图集2</text>
+      </navigator>
+      <navigator class="icon-nav-navigator">
+        <text class="iconfont icon-picfill"></text>
+        <text class="icon-nav-text">图集3</text>
+      </navigator>
+      <navigator class="icon-nav-navigator">
+        <text class="iconfont icon-picfill"></text>
+        <text class="icon-nav-text">图集4</text>
+      </navigator>
+      <navigator class="icon-nav-navigator">
+        <text class="iconfont icon-picfill"></text>
+        <text class="icon-nav-text">图集5</text>
+      </navigator>
+      <navigator class="icon-nav-navigator">
+        <text class="iconfont icon-picfill"></text>
+        <text class="icon-nav-text">图集6</text>
+
+      </navigator>
+      <navigator class="icon-nav-navigator">
+        <text class="iconfont icon-picfill"></text>
+        <text class="icon-nav-text">图集7</text>
+
+      </navigator>
+      <navigator class="icon-nav-navigator">
+        <text class="iconfont icon-picfill"></text>
+        <text class="icon-nav-text">图集8</text>
+
+      </navigator>
+      <navigator class="icon-nav-navigator">
+        <text class="iconfont icon-picfill"></text>
+        <text class="icon-nav-text">图集9</text>
+
+      </navigator>
+      <navigator class="icon-nav-navigator">
+        <text class="iconfont icon-picfill"></text>
+        <text class="icon-nav-text">图集10</text>
+
+      </navigator>
+      <navigator class="icon-nav-navigator">
+        <text class="iconfont icon-picfill"></text>
+        <text class="icon-nav-text">图集11</text>
+
+      </navigator>
+      <navigator class="icon-nav-navigator">
+        <text class="iconfont icon-picfill"></text>
+        <text class="icon-nav-text">图集12</text>
+
+      </navigator>
+    </view>
+  </scroll-view>
+
+  <view class="icon-bar-box">
+    <view class="icon-bar">
+      <view class="icon-bar-dot" style="margin-left:{{scroll_left}}%"></view>
+    </view>
+  </view>
+
+</template>
