@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText": "个人中心",
   "usingComponents": {
     "pzm-button": "../../component/button/index"
   }

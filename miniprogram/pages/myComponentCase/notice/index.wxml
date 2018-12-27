@@ -1,0 +1,8 @@
+<!--pages/myComponentCase/notice/index.wxml-->
+
+<pzm-notice></pzm-notice>
+
+<pzm-notice bg-color="pink"></pzm-notice>
+
+
+<pzm-notice icon="icon-hot" icon-color="red" bg-color="orange"></pzm-notice>

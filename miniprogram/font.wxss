@@ -23,6 +23,7 @@
 }
 
 /* 边框 */
+
 .solid-bottom::after, .solid-left::after, .solid-right::after, .solid-top::after,
 .solid::after {
   content: " ";
@@ -35,6 +36,7 @@
   transform-origin: 0 0;
   pointer-events: none;
 }
+
 .solid::after {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -55,15 +57,49 @@
   border-left: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.text-bold {
+  font-weight: bold;
+}
 
+.text-delete {
+  text-decoration: line-through;
+  color: #999;
+}
 
-
-.text-24{
+.text-24 {
   font-size: 24rpx;
 }
-.text-28{
+
+.text-28 {
   font-size: 28rpx;
 }
-.text-30{
+
+.text-30 {
   font-size: 30rpx;
+}
+
+.text-32 {
+  font-size: 32rpx;
+}
+
+.text-red, .line-red, .lines-red {
+  color: #e54d42 !important;
+}
+
+.text-price::before {
+  content: "¥";
+  font-size: 80%;
+  margin-right: 6rpx;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-overflow-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }

@@ -2,4 +2,9 @@
 @import '../template/tab-nav/index';
 @import '../template/bar/index';
 @import '../template/x-scroll/index';
-@import '../template/card-list/index';
+@import '../template/card-list-grid/index';
+@import '../template/card-list-linear/index';
+
+.pzm{
+  font-size: 50rpx !important;
+}

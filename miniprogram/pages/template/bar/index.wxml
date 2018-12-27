@@ -1,8 +1,14 @@
 <template name="Bar">
-  <view class='bar'>
-    <view>
-      <text class='iconfont icon-titles success-text mr-20'></text>
-      <text class='text-28 success-text'>最新推荐</text>
+  <view class='bar solid-bottom'>
+    <view class='bar-left'>
+      <pzm-icon type='icon-titles' color='#5EB95E'></pzm-icon>
+      <text class='success-text text-28'>{{name}}</text>
+    </view>
+    <view class='bar-right'>
+      <navigator url=''>
+        <text class='text-24 text-gray'>更多</text>
+        <pzm-icon type='icon-right' color='#B5ABAA'></pzm-icon>
+      </navigator>
     </view>
   </view>
 </template>

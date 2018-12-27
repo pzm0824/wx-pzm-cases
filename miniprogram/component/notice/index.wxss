@@ -1,0 +1,65 @@
+/* component/notice/index.wxss */
+
+@keyframes notice {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.notice {
+  display: flex;
+  position: relative;
+  height: 70rpx;
+  padding: 0 24rpx 0 30rpx;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.notice .icon{
+  display: block;
+  width: 36rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  margin-right: 12rpx;
+}
+
+.notice .text {
+  display: inline-block;
+  margin-right: 30rpx;
+  white-space: nowrap;
+  font-size: 24rpx;
+  line-height: 70rpx;
+}
+
+.notice .wrap {
+  flex: 1;
+  overflow: hidden;
+}
+
+.notice .animate {
+  animation: notice 8s linear infinite;
+}
+
+.notice .overlay {
+  position: absolute;
+  width: 44rpx;
+  height: 100%;
+  top: 0;
+  right: 60rpx;
+  z-index: 1;
+}
+
+.notice .span {
+  display: inline-block;
+  margin-right: 18rpx;
+}
+
+.close {
+  margin-left: 20rpx;
+  color: #fff;
+  font-size: 24rpx;
+}

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "icon",
+  "usingComponents": {
+    "pzm-icon":"../../../component/icon/index"
+  }
+}

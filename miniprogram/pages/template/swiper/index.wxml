@@ -1,5 +1,5 @@
 <template name="SwiperIndex">
-  <swiper class="card-swiper round-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#1AAD19">
+  <swiper class="card-swiper round-dot mb-20" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#1AAD19">
     <navigator url='/pages/pzmIndex/index'>
       <swiper-item wx:for="{{swiper_list}}" wx:key class="{{cardCur==index?'cur':''}}">
         <view class='bg-img shadow-blur' style="background-image:url({{item.url}})">

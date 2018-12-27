@@ -1,0 +1,15 @@
+/* pages/loading/index.wxss */
+
+.bar {
+  display: flex;
+  position: relative;
+  height: 90rpx;
+  align-items: center;
+  background: #fff;
+}
+
+.doc-main {
+  background: #fff;
+  padding: 20rpx;
+  box-sizing: border-box;
+}

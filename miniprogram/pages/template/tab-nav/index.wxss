@@ -27,7 +27,6 @@
   height: 80rpx;
   text-align: center;
   line-height: 80rpx;
-  font-size: 40rpx;
   border-radius: 50%;
   color: #fff;
 }
@@ -41,11 +40,11 @@
 .icon-nav-navigator .iconfont{
   background-color:rgb(94, 185, 94);
 }
-
+/* 隐藏安卓滚动条 margin-top: -20rpx; */
 .icon-bar-box {
   position: relative;
   background: #fff;
-  /* margin-top: -20rpx; */
+  margin-top: -20rpx; 
   height: 20rpx;
   z-index: 889;
 }

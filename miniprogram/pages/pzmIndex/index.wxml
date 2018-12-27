@@ -3,21 +3,38 @@
 <import src="../template/tab-nav/index.wxml" />
 <import src="../template/bar/index.wxml" />
 <import src="../template/x-scroll/index.wxml" />
-<import src="../template/card-list/index.wxml" />
+<import src="../template/card-list-grid/index.wxml" />
+<import src="../template/card-list-linear/index.wxml" />
 
 <!-- swiper -->
 <template is="SwiperIndex" data="{{swiper_list,cardCur}}"></template>
+<pzm-notice 
+  notice="{{notice}}"
+  scroll="{{true}}" 
+  bg-color="rgb(94, 185, 94)" 
+  bg-rgba="rgba(94, 185, 94,0)"  
+  text-color="#fff"
+  text-size="26"
+  icon-color="#fff"
+  icon="icon-notification"
+  >
+</pzm-notice>
 
 <!-- tab-nav -->
-<template is="TabNav" data="{{scroll_left}}"></template>
+<template is="TabNav" data="{{nav_list,scroll_left_num}}"></template>
 
-<!-- bar -->
-<template is="Bar"></template>
+<!-- Bar card-list-linear -->
+<template is="Bar" data="{{...bar_list[2]}}"></template>
+<template is="CardListLinear" data="{{limit_list}}"></template>
 
-<!-- x-scroll -->
-<template is="XScroll"></template>
 
-<template is="Bar"></template>
-<template is="CardList"></template>
+<!-- bar x-scroll -->
+<template is="Bar" data="{{...bar_list[0]}}"></template>
+<template is="XScroll" data="{{recommend_list}}"></template>
+
+<!-- bar card-list-grid -->
+<template is="Bar" data="{{...bar_list[1]}}"></template>
+<template is="CardListGrid" data="{{recommend_list}}"></template>
+
 
 

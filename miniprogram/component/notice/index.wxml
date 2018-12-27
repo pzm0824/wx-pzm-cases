@@ -1,0 +1,17 @@
+<!--component/notice/index.wxml-->
+<view class="notice" style="background-color: {{bgColor}}">
+  <pzm-icon class='icon' type="{{icon}}" size="36" color="{{iconColor}}"></pzm-icon>
+  <view class="wrap">
+    <view wx:if="{{scroll}}" class="text animate">
+      <text class="span" style='color:{{textColor}};font-size:{{textSize}}rpx'>{{notice}}</text>
+      <text class="span" style='color:{{textColor}};font-size:{{textSize}}rpx'>{{notice}}</text>
+    </view>
+    <view wx:else class="text">
+      <text class="span" style='color:{{textColor}};font-size:{{textSize}}rpx'>{{notice}}</text>
+    </view>
+  </view>
+  <block>
+    <view class="overlay" style="background: linear-gradient(to right,{{bgRgba}}, {{bgColor}}));"></view>
+    <view class="close" type="close" size="24" color="#fff" bindtap="onDismissNotice"></view>
+  </block>
+</view>

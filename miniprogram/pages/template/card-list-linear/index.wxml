@@ -1,0 +1,27 @@
+<template name="CardListLinear">
+
+  <view class='card-list-box card-list-linear'>
+
+    <block wx:for="{{limit_list}}">
+      <view class='card-list-li mb-20'>
+        <view class='card-list-img'>
+          <image mode="aspectFill" src='{{item.url}}'></image>
+        </view>
+        <view class='card-list-msg solid-bottom ml-20'>
+          <text class='text-28 text-bold text-title-linear mb-10 text-overflow-2'>{{item.title}}</text>
+          <view>
+            <text class='text-price text-red text-32 mr-20'>{{item.price}}</text>
+            <text class='text-delete text-24'>￥{{item.origin_price}}</text>
+          </view>
+          <view class='text-right text-24 text-gray'>
+            剩余
+            <text class='text-28 text-red'> {{item.remain}} </text>件
+          </view>
+        </view>
+      </view>
+
+    </block>
+
+  </view>
+
+</template>

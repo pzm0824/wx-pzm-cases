@@ -2,13 +2,16 @@
   "pages": [
     "pages/pzmIndex/index",
     "pages/index/index",
-    "pages/my/index",
+    "pages/class/index",
     "pages/list/index",
-    "pages/button/index",
-    "pages/loading/index",
-    "pages/shareFriend/index",
-    "pages/card/index",
-    "pages/share/index"
+    "pages/cart/index",
+    "pages/my/index",
+    "pages/myComponentCase/button/index",
+    "pages/myComponentCase/icon/index",
+    "pages/myComponentCase/loading/index",
+    "pages/myComponentCase/shareFriend/index",
+    "pages/myComponentCase/share/index",
+    "pages/myComponentCase/notice/index"
   ],
   "window": {
     "backgroundColor": "#1AAD19",
@@ -18,23 +21,38 @@
     "navigationBarTextStyle": "#fff"
   },
   "tabBar": {
-    "selectedColor": "#1AAD19",
+    "color": "#aaa",
+    "selectedColor": "#70C043",
     "list": [
       {
         "pagePath": "pages/pzmIndex/index",
-        "text": "首页"
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-cur.png"
+      },
+      {
+        "pagePath": "pages/class/index",
+        "text": "分类",
+        "iconPath": "images/class.png",
+        "selectedIconPath": "images/class-cur.png"
+      },
+      {
+        "pagePath": "pages/cart/index",
+        "text": "购物车",
+        "iconPath": "images/cart.png",
+        "selectedIconPath": "images/cart-cur.png"
       },
       {
         "pagePath": "pages/my/index",
-        "text": "我的"
+        "text": "我的",
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/me-cur.png"
       },
       {
         "pagePath": "pages/list/index",
-        "text": "组件列表"
-      },
-      {
-        "pagePath": "pages/card/index",
-        "text": "卡片"
+        "text": "组件列表",
+        "iconPath": "images/component.png",
+        "selectedIconPath": "images/component-cur.png"
       }
     ]
   }

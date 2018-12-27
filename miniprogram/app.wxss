@@ -1,6 +1,5 @@
 /**app.wxss**/
 
-@import "icon.wxss" ;
 @import "color.wxss";
 @import "font.wxss";
 @import "margin.wxss";

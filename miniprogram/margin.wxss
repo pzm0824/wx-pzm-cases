@@ -1,5 +1,3 @@
-
-
 .mt-sm {
   margin-top: 20rpx;
 }
@@ -15,10 +13,25 @@
 .ml-sm {
   margin-left: 20rpx;
 }
-.m-xs{
-  margin:10rpx;
 
+.m-xs {
+  margin: 10rpx;
 }
-.mr-20{
+
+
+
+
+.ml-20 {
   margin-left: 20rpx;
+}
+
+.mr-20 {
+  margin-right: 20rpx;
+}
+
+.mb-10{
+  margin-bottom: 10rpx;
+}
+.mb-20{
+  margin-bottom: 20rpx;
 }

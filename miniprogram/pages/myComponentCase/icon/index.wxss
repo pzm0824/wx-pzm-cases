@@ -1,0 +1,80 @@
+/* pages/myComponentCase/icon/index.wxss */
+
+.bar {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background: #fff;
+  height: 50px;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.search.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1024;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.bar .serach-form {
+  background: #f5f5f5;
+  line-height: 32px;
+  height: 32px;
+  font-size: 12px;
+  color: #666;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+.bar .serach-form input {
+  flex: 1;
+  padding-right: 10px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 13px;
+}
+
+.search-icon{
+  padding: 0 20rpx;
+}
+
+.grid {
+  margin-top: 110rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+view.grid {
+  text-align: center;
+  background: #fff;
+}
+
+view.grid>view {
+  display: flex;
+  flex-direction: column;
+  border-right: 1rpx solid #eee;
+  border-bottom: 1rpx solid #eee;
+  padding: 10px;
+}
+
+view.grid>view .icon {
+  display: block;
+  width: 100%;
+  position: relative;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+view.grid>view text {
+  display: block;
+  color: #888;
+  margin-top: 5px;
+  line-height: 20px;
+  font-size: 13px;
+}
+
+.grid.col-3>item, .grid.col-3>view {
+  width: 33.33%;
+}

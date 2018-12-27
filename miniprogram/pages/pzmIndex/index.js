@@ -1,4 +1,6 @@
 // pages/pzmIndex/index.js
+const mock = require('../../mock/index.js')
+
 Page({
 
   /**
@@ -6,30 +8,18 @@ Page({
    */
   data: {
     cardCur: 0,
-    swiper_list: [{
-      id: 0,
-      url: 'http://p3.pstatp.com/large/pgc-image/1528116186201cc37c78550'
-    }, {
-      id: 1,
-      url: 'https://dvblobcdnjp.azureedge.net//Content/Upload/Popular/Images/2018-10/2d19f536-957b-48c7-8bb0-c6a75fc16146_m.jpg'
-    }, {
-      id: 2,
-      url: 'http://pic1.win4000.com/wallpaper/3/543c9f65433d0.jpg'
-    }, {
-      id: 3,
-      url: 'http://i.shangc.net/2018/0513/20180513012805901.jpg'
-    }, {
-      id: 4,
-      url: "http://p98.pstatp.com/large/pgc-image/153855704293169e01166e9"
-    }],
-
+    swiper_list: mock.default.swiper_list,  //轮播图
+    nav_list:mock.default.nav_list, //导航
+    limit_list: mock.default.limit_list,   //限量
+    recommend_list: mock.default.recommend_list,  //热门推荐
+    bar_list: mock.default.bar_list, //bar栏
+    notice:"wx-pzm-cases平台将在1月22日0点－9点进行系统升级，升级期间将暂停服务，敬请谅解。"
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
   },
 
   /**
@@ -52,7 +42,7 @@ Page({
   // 菜单滚动获取信息
   navScroll: function(e) {
     this.setData({
-      scroll_left: e.detail.scrollLeft * 0.1
+      scroll_left_num: e.detail.scrollLeft * 0.1
     })
   },
 })

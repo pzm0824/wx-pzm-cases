@@ -1,0 +1,13 @@
+<!--pages/myComponentCase/icon/index.wxml-->
+<view class="search fixed bar">
+  <view class='serach-form round'>
+    <pzm-icon class='icon search-icon' type="icon-search" size="24" color="#888"></pzm-icon>
+    <input type="text" placeholder="搜索icon" confirm-type="search" bindinput='searchIcon'/>
+  </view>
+</view>
+<view class="grid col-3">
+  <view wx:for="{{icon}}" wx:key wx:if="{{item.isShow}}">
+    <pzm-icon class='icon' type="icon-{{item.name}}" size="36" color="#888"></pzm-icon>
+    <text>{{item.name}}</text>
+  </view>
+</view>

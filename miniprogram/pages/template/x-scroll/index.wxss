@@ -1,7 +1,9 @@
 .card-x-scroll-box {
   padding: 20rpx 20rpx;
   box-sizing: border-box;
+  background-color: #fff;
 }
+
 .card-x-scroll-box .card-list-box {
   display: flex;
   white-space: nowrap;
@@ -19,12 +21,18 @@
   width: 200rpx;
   height: 200rpx;
 }
-.card-x-scroll-box .card-list-box .card-list-msg{
+
+.card-x-scroll-box .card-list-box .card-list-msg {
   text-align: center;
   height: 60rpx;
   line-height: 60rpx;
 }
-.card-list-box .card-list-img image {
+
+.card-x-scroll-box .card-list-img image {
+  border-radius: 10rpx;
+}
+
+image {
   display: block;
   width: 100%;
   height: 100%;

@@ -9,9 +9,9 @@ Page({
       { title: '按钮', name: 'button' },
       { title: '图标 ', name: 'icon' },
       { title: '加载', name: 'loading' },
-      { title: '动画 ', name: 'animation' },
     ],
     cases:[
+      { title: '通告栏', name: 'notice' },
       { title: '朋友圈', name: 'shareFriend' },
       { title: '仿share', name: 'share' },
 

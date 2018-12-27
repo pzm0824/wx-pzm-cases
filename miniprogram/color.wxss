@@ -1,3 +1,10 @@
 .success-text {
   color: #5db85d;
 }
+
+.text-title-linear{
+  color: #4b566a;
+}
+.text-gray{
+  color: #B5ABAA !important;
+}

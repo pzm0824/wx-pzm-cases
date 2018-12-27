@@ -1,68 +1,19 @@
 <template name="TabNav">
   <scroll-view scroll-x="true" bindscroll="navScroll" class='icon-nav-box'>
     <view class='icon-nav'>
-      <navigator class='icon-nav-navigator'>
-        <text class='iconfont icon-picfill'></text>
-        <text class='icon-nav-text'>图集1</text>
-      </navigator>
-
-      <navigator class="icon-nav-navigator">
-        <text class="iconfont icon-picfill"></text>
-        <text class="icon-nav-text">图集2</text>
-      </navigator>
-      <navigator class="icon-nav-navigator">
-        <text class="iconfont icon-picfill"></text>
-        <text class="icon-nav-text">图集3</text>
-      </navigator>
-      <navigator class="icon-nav-navigator">
-        <text class="iconfont icon-picfill"></text>
-        <text class="icon-nav-text">图集4</text>
-      </navigator>
-      <navigator class="icon-nav-navigator">
-        <text class="iconfont icon-picfill"></text>
-        <text class="icon-nav-text">图集5</text>
-      </navigator>
-      <navigator class="icon-nav-navigator">
-        <text class="iconfont icon-picfill"></text>
-        <text class="icon-nav-text">图集6</text>
-
-      </navigator>
-      <navigator class="icon-nav-navigator">
-        <text class="iconfont icon-picfill"></text>
-        <text class="icon-nav-text">图集7</text>
-
-      </navigator>
-      <navigator class="icon-nav-navigator">
-        <text class="iconfont icon-picfill"></text>
-        <text class="icon-nav-text">图集8</text>
-
-      </navigator>
-      <navigator class="icon-nav-navigator">
-        <text class="iconfont icon-picfill"></text>
-        <text class="icon-nav-text">图集9</text>
-
-      </navigator>
-      <navigator class="icon-nav-navigator">
-        <text class="iconfont icon-picfill"></text>
-        <text class="icon-nav-text">图集10</text>
-
-      </navigator>
-      <navigator class="icon-nav-navigator">
-        <text class="iconfont icon-picfill"></text>
-        <text class="icon-nav-text">图集11</text>
-
-      </navigator>
-      <navigator class="icon-nav-navigator">
-        <text class="iconfont icon-picfill"></text>
-        <text class="icon-nav-text">图集12</text>
-
-      </navigator>
+      <block wx:for="{{nav_list}}">
+        <navigator src="/pages/pzmIndex/index/{{item.name}}"  class='icon-nav-navigator'>
+          <!-- <pzm-icon style='background-color:{{item.bgColor}}' type='icon-{{item.url}}' class="iconfont" color='#fff' size="36"></pzm-icon> -->
+           <pzm-icon  type='icon-{{item.url}}' class="iconfont" color='#fff' size="36"></pzm-icon>
+          <text class='icon-nav-text'>{{item.title}}</text>
+        </navigator>
+      </block>
     </view>
   </scroll-view>
 
   <view class="icon-bar-box">
     <view class="icon-bar">
-      <view class="icon-bar-dot" style="margin-left:{{scroll_left}}%"></view>
+      <view class="icon-bar-dot" style="margin-left:{{scroll_left_num}}%"></view>
     </view>
   </view>
 

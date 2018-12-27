@@ -1,1 +1,6 @@
-{}
+{
+  "navigationBarTitleText": "组件案例",
+  "usingComponents": {
+    "pzm-icon": "../../component/icon/index"
+  }
+}
