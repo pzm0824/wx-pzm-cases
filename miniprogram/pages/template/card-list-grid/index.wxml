@@ -1,7 +1,7 @@
 <template name="CardListGrid">
   <view class='card-list-box card-list-grid normal'>
 
-    <block wx:for="{{recommend_list}}" wx:for-index='idx' wx:for-item="pzmItem">
+    <block  wx:for="{{recommend_list}}" wx:for-index='idx' wx:key="{{idx}}" wx:for-item="pzmItem">
 
       <view wx:if="{{idx<4}}" class='card-list-li'>
         <view class='card-list-img'>

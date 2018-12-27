@@ -65,7 +65,9 @@
   text-decoration: line-through;
   color: #999;
 }
-
+.text-20{
+  font-size: 20rpx;
+}
 .text-24 {
   font-size: 24rpx;
 }

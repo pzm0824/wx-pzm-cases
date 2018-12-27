@@ -3,7 +3,7 @@
 
     <view class='card-list-box'>
 
-      <view wx:for="{{recommend_list}}"  class='card-list-li'>
+      <view  wx:for="{{recommend_list}}" wx:key="{{index}}" class='card-list-li'>
         <navigator>
           <view class='card-list-img'>
             <image mode="aspectFill" src='{{item.url}}'></image>

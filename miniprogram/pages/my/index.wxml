@@ -1,2 +1,25 @@
 <!--pages/my/index.wxml-->
-<pzm-button type="primary" size="small">潘志猛</pzm-button>
+<view class='my'>
+  <view class='bg-color'>
+    <view class="my-con">
+      <view class='my-img'>
+        <image src='http://p3.pstatp.com/large/pgc-image/1528116186201cc37c78550' mode='aspectFill'></image>
+      </view>
+      <view class='my-msg '>
+        <text class='my-name text-28'>潘志猛</text>
+        <!-- <view class='my-identity'>
+          <pzm-icon class='members' type='icon-choicenessfill'></pzm-icon>
+          <text class='tag my-tag text-20'>普通用户</text>
+        </view> -->
+      </view>
+      <view class='my-set'>
+
+        <navigator class='my-set-box' src="">
+          <pzm-icon class='icon' type="icon-settings"></pzm-icon>
+          <text class='text-24'>账号管理</text>
+        </navigator>
+
+      </view>
+    </view>
+  </view>
+</view>

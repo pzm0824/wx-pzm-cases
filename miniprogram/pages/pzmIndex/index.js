@@ -13,7 +13,7 @@ Page({
     limit_list: mock.default.limit_list,   //限量
     recommend_list: mock.default.recommend_list,  //热门推荐
     bar_list: mock.default.bar_list, //bar栏
-    notice:"wx-pzm-cases平台将在1月22日0点－9点进行系统升级，升级期间将暂停服务，敬请谅解。"
+    notice:"wx-pzm-cases平台将在1月1日0点－9点进行系统升级，升级期间将暂停服务，敬请谅解。"
   },
 
   /**

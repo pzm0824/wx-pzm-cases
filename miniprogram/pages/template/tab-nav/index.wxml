@@ -1,7 +1,7 @@
 <template name="TabNav">
   <scroll-view scroll-x="true" bindscroll="navScroll" class='icon-nav-box'>
     <view class='icon-nav'>
-      <block wx:for="{{nav_list}}">
+      <block wx:for="{{nav_list}}" wx:key="{{index}}">
         <navigator src="/pages/pzmIndex/index/{{item.name}}"  class='icon-nav-navigator'>
           <!-- <pzm-icon style='background-color:{{item.bgColor}}' type='icon-{{item.url}}' class="iconfont" color='#fff' size="36"></pzm-icon> -->
            <pzm-icon  type='icon-{{item.url}}' class="iconfont" color='#fff' size="36"></pzm-icon>
