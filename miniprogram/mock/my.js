@@ -90,12 +90,6 @@ export default {
       img_url: "icon-lock",
       color: "#aaa",
       url: ""
-    },
-    {
-      title: "暂不开放",
-      img_url: "icon-lock",
-      color: "#aaa",
-      url: ""
     }
   ],
 

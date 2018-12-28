@@ -11,7 +11,7 @@
     <view class='pzm-card-category-right'>
 
       <view class='flex'>
-        <block wx:for="{{list}}">
+        <block wx:for="{{list}}" wx:key>
           <view class='card-category-list' style='width:33%'>
             <view class="pzm-card-loading-block pzm-card-category-img m-xs">
 

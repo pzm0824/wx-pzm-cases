@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "我的",
-  "navigationBarBackgroundColor": "#fff",
+  "navigationBarBackgroundColor": "#f1f1f1",
   "navigationBarTextStyle": "black",
   "usingComponents": {
     "pzm-button": "../../component/button/index",

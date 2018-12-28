@@ -27,11 +27,11 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    setTimeout(()=>{
-      this.setData({
-        list_flag : 1
-      })
-    },3000)
+    // setTimeout(()=>{
+    //   this.setData({
+    //     list_flag : 1
+    //   })
+    // },3000)
   },
 
   /**
