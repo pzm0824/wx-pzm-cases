@@ -1,7 +1,7 @@
 export default {
 
   /*
-    1  待付款  2 代发货 3 待收货 4待评价 5 退货
+    1  待付款  2 代发货 3 待收货 4待评价 
   */
   order_list: [{
     title: '待付款',
@@ -26,13 +26,7 @@ export default {
     color: '#38D29F',
     url: 4
 
-  }, {
-    title: '退换/售后',
-    img_url: "icon-moneybag",
-    color: '#38D29F',
-    url: 5
-
-  }],
+  }, ],
   /*
    title 标题  img_url icon样式或者图片路径  color icon颜色  url跳转路径
   */
@@ -74,17 +68,13 @@ export default {
     },
 
     {
-      title: "暂不开放",
-      img_url: "icon-lock",
-      color: "#aaa",
-      url: ""
+      title: '退换/售后',
+      img_url: "icon-moneybag",
+      color: '#38D29F',
+      url: 5
+
     },
-    {
-      title: "暂不开放",
-      img_url: "icon-lock",
-      color: "#aaa",
-      url: ""
-    },
+    
     {
       title: "暂不开放",
       img_url: "icon-lock",

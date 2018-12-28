@@ -39,7 +39,7 @@
     </view>
   </view>
 
-  <view class='box-list grid col-5'>
+  <view class='box-list grid col-4'>
     <block wx:for="{{order_list}}" wx:key>
       <view class='box-item'>
         <!-- 需要修改icon color的时候可以在my.js中设置color属性 判断点击的是哪个状态根据 传值 url -->
@@ -54,7 +54,7 @@
 </view>
 
 <view class='order-con mt-20'>
-  <view class='box-list grid col-5'>
+  <view class='box-list grid col-4'>
 
     <block wx:for="{{grid_list_menu}}" wx:key>
       <view class='box-item'>
@@ -66,10 +66,10 @@
 
       </view>
     </block>
-
-
   </view>
 </view>
+
+
 
 <view class='my-menu mt-20 mb-20 solid-top'>
 

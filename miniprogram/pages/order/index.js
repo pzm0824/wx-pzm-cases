@@ -1,7 +1,7 @@
 // pages/order/index.js
 
 //对照 my.js中的状态
-const order_title = ["全部订单","待付款", "待发货", "待收货", "待评价", "退换/售后"]
+const order_title = ["全部订单","待付款", "待发货", "待收货", "待评价"]
 
 Page({
 

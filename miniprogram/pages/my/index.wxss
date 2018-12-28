@@ -126,3 +126,11 @@
   text-align: center;
   color: #888;
 }
+/* .order-con,.my-menu,.my-service,.my-about{
+  padding: 0 20rpx;
+  width: 100%;
+}
+.list-box-menu{
+  border-radius: 10rpx;
+
+} */

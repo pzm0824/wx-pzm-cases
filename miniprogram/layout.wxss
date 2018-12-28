@@ -353,8 +353,8 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
 
 .menu-item .menu-item-left {
   position: relative;
-  width: 100rpx;
   text-align: center;
+  margin-right: 20rpx;
 }
 
 .menu-item .menu-item-right {
