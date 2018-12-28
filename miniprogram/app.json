@@ -6,6 +6,7 @@
     "pages/list/index",
     "pages/cart/index",
     "pages/my/index",
+    "pages/order/index",
     "pages/myComponentCase/button/index",
     "pages/myComponentCase/icon/index",
     "pages/myComponentCase/loading/index",
@@ -14,7 +15,7 @@
     "pages/myComponentCase/notice/index"
   ],
   "window": {
-    "backgroundColor": "#1AAD19",
+    "backgroundColor": "#fff",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#1AAD19",
     "navigationBarTitleText": "首页",

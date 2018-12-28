@@ -1,0 +1,2 @@
+<!--pages/order/index.wxml-->
+<text>{{order_status}}--{{order_title}}</text>

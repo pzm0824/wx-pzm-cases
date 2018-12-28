@@ -1,8 +1,10 @@
 {
-  "navigationBarTitleText": "个人中心",
+  "navigationBarTitleText": "我的",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTextStyle": "black",
   "usingComponents": {
     "pzm-button": "../../component/button/index",
-    "pzm-icon":"../../component/icon/index"
-
+    "pzm-icon": "../../component/icon/index",
+    "pzm-loading": "../../component/loading/index"
   }
 }

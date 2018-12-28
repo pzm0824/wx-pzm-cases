@@ -1,25 +1,143 @@
 <!--pages/my/index.wxml-->
-<view class='my'>
-  <view class='bg-color'>
-    <view class="my-con">
-      <view class='my-img'>
-        <image src='http://p3.pstatp.com/large/pgc-image/1528116186201cc37c78550' mode='aspectFill'></image>
-      </view>
-      <view class='my-msg '>
-        <text class='my-name text-28'>潘志猛</text>
-        <!-- <view class='my-identity'>
+<view class='solid-top'>
+  <view class='my'>
+    <view class='bg-color'>
+      <view class="my-con">
+        <view class='my-img'>
+          <image src='http://i.shangc.net/2018/0513/20180513012805901.jpg' mode='aspectFill'></image>
+        </view>
+        <view class='my-msg '>
+          <text class='my-name text-28'>潘志猛</text>
+          <!-- <view class='my-identity'>
           <pzm-icon class='members' type='icon-choicenessfill'></pzm-icon>
           <text class='tag my-tag text-20'>普通用户</text>
         </view> -->
-      </view>
-      <view class='my-set'>
+        </view>
+        <view class='my-set'>
 
-        <navigator class='my-set-box' src="">
-          <pzm-icon class='icon' type="icon-settings"></pzm-icon>
-          <text class='text-24'>账号管理</text>
-        </navigator>
+          <navigator class='my-set-box' url="/pages/cart/index">
+            <pzm-icon class='icon' type="icon-settings"></pzm-icon>
+            <text class='text-24'>账号管理</text>
+          </navigator>
 
+        </view>
       </view>
     </view>
   </view>
+
+</view>
+
+
+<view class='order-con mt-20'>
+  <view class='bar' bindtap="goToAllOrder">
+    <view class='bar-left text-32'>
+      我的订单
+    </view>
+    <view class='bar-right'>
+      <text class='text-26 text-gray'>查看全部</text>
+      <pzm-icon type='icon-right' color='#AAA'></pzm-icon>
+    </view>
+  </view>
+
+  <view class='box-list grid col-5'>
+    <block wx:for="{{order_list}}" wx:key>
+      <view class='box-item'>
+        <!-- 需要修改icon color的时候可以在my.js中设置color属性 判断点击的是哪个状态根据 传值 url -->
+        <navigator url="/pages/order/index?orderStatus={{item.url}}">
+          <pzm-icon class='icon' color="{{item.color}}" type="{{item.img_url}}" size='48'></pzm-icon>
+          <text class='text-24 box-list-text'>{{item.title}}</text>
+        </navigator>
+      </view>
+    </block>
+
+  </view>
+</view>
+
+<view class='order-con mt-20'>
+  <view class='box-list grid col-5'>
+
+    <block wx:for="{{grid_list_menu}}" wx:key>
+      <view class='box-item'>
+        <navigator url=''>
+
+          <pzm-icon class='icon' color='{{item.color}}' type="{{item.img_url}}" size='48'></pzm-icon>
+          <text class='text-24 box-list-text'>{{item.title}}</text>
+        </navigator>
+
+      </view>
+    </block>
+
+
+  </view>
+</view>
+
+<view class='my-menu mt-20 mb-20 solid-top'>
+
+  <view class='list-box-menu wx'>
+    <block wx:for="{{linear_list_menu_one}}" wx:key>
+      <navigator>
+        <view class='menu-item '>
+          <view class='menu-item-left'>
+            <pzm-icon class='icon' color='{{item.color}}' type="{{item.img_url}}" size='48'></pzm-icon>
+          </view>
+          <view class='menu-item-right solid-bottom'>
+            <text class='text-32 menut-text '>{{item.title}}</text>
+            <pzm-icon class='icon' color='#aaa' type="icon-right" size='32'></pzm-icon>
+          </view>
+        </view>
+      </navigator>
+    </block>
+  </view>
+</view>
+
+<!-- 是按钮性 -->
+<view class='my-service solid-top'>
+  <view class='list-box-menu wx'>
+    <button open-type="contact">
+      <view class='menu-item '>
+        <view class='menu-item-left'>
+          <pzm-icon class='icon' color='#70C043' type="icon-service" size='48'></pzm-icon>
+        </view>
+        <view class='menu-item-right solid-bottom'>
+          <text class='text-32 menut-text '>在线客服</text>
+          <pzm-icon class='icon' color='#aaa' type="icon-right" size='32'></pzm-icon>
+        </view>
+      </view>
+    </button>
+    <button bindtap="callPhone">
+      <view class='menu-item '>
+        <view class='menu-item-left'>
+          <pzm-icon class='icon' color='#70C043' type="icon-servicefill" size='48'></pzm-icon>
+        </view>
+        <view class='menu-item-right solid-bottom'>
+          <text class='text-32 menut-text '>电话客服</text>
+          <pzm-icon class='icon' color='#aaa' type="icon-right" size='32'></pzm-icon>
+        </view>
+      </view>
+    </button>
+  </view>
+</view>
+
+<view class='my-about mt-20 solid-top'>
+  <view class='list-box-menu'>
+    <block wx:for="{{linear_list_menu_two}}" wx:key>
+      <navigator>
+
+        <view class='menu-item'>
+          <view class='menu-item-left'>
+            <pzm-icon class='icon' color='{{item.color}}' type="{{item.img_url}}" size='48'></pzm-icon>
+          </view>
+          <view class='menu-item-right solid-bottom'>
+            <text class='text-32 menut-text '>{{item.title}}</text>
+
+            <pzm-icon class='icon' color='#aaa' type="icon-right" size='32'></pzm-icon>
+          </view>
+        </view>
+      </navigator>
+    </block>
+  </view>
+</view>
+
+<view class='game-over'>
+  <pzm-loading is-end="true" text="我是有底线的哈"></pzm-loading>
 </view>

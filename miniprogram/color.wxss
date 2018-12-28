@@ -8,3 +8,25 @@
 .text-gray{
   color: #B5ABAA !important;
 }
+
+.text-red, .line-red, .lines-red {
+  color: #e54d42 !important;
+}
+.text-orange, .line-orange, .lines-orange {
+  color: #f37b1d !important;
+}
+.text-yellow, .line-yellow, .lines-yellow {
+  color: #fbbd08 !important;
+}
+.text-olive, .line-olive, .lines-olive {
+  color: #8dc63f !important;
+}
+.text-cyan, .line-cyan, .lines-cyan {
+  color: #1cbbb4 !important;
+}
+.text-blue, .line-blue, .lines-blue {
+  color: #0081ff !important;
+}
+.text-purple, .line-purple, .lines-purple {
+  color: #6739b6 !important;
+}

@@ -1,6 +1,5 @@
 @import '../template/swiper/index';
 @import '../template/tab-nav/index';
-@import '../template/bar/index';
 @import '../template/x-scroll/index';
 @import '../template/card-list-grid/index';
 @import '../template/card-list-linear/index';
