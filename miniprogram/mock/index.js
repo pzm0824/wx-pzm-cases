@@ -1,5 +1,8 @@
 export default {
   swiper_list: [{
+    id: 5,
+    url: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1546086990755&di=65fce57658ca496f7e48210cea98c56c&imgtype=0&src=http%3A%2F%2Fb.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F63d0f703918fa0ec2189ad832c9759ee3c6ddbf6.jpg"
+  }, {
     id: 0,
     url: 'http://p3.pstatp.com/large/pgc-image/1528116186201cc37c78550'
   }, {
@@ -14,7 +17,7 @@ export default {
   }, {
     id: 4,
     url: "http://p98.pstatp.com/large/pgc-image/153855704293169e01166e9"
-  }],
+  }, ],
 
   nav_list: [{
     id: 0,
@@ -24,67 +27,67 @@ export default {
     bgColor: "pink"
   }, {
     id: 0,
-      title: 'evaluate',
+    title: 'evaluate',
     url: 'evaluate',
     name: "",
     bgColor: "orange"
   }, {
     id: 0,
-      title: 'emoji',
+    title: 'emoji',
     url: 'emoji',
     name: "emoji",
     bgColor: "#fbbd08"
   }, {
     id: 0,
-      title: 'discover',
+    title: 'discover',
     url: 'discover',
     name: "discover",
     bgColor: "#8dc63f"
   }, {
     id: 0,
-      title: 'cart',
+    title: 'cart',
     url: 'cart',
     name: "cart",
     bgColor: "gray"
   }, {
     id: 0,
-      title: 'goods',
+    title: 'goods',
     url: 'goods',
     name: "goods",
     bgColor: "#0081ff"
   }, {
     id: 0,
-      title: 'present',
+    title: 'present',
     url: 'present',
     name: "present",
     bgColor: "#39b54a"
   }, {
     id: 0,
-      title: 'redpacket',
+    title: 'redpacket',
     url: 'redpacket',
     name: "redpacket",
-      bgColor: "red"
+    bgColor: "red"
   }, {
     id: 0,
-      title: 'hot',
+    title: 'hot',
     url: 'hot',
     name: "hot",
     bgColor: ""
   }, {
     id: 0,
-      title: 'deliver',
+    title: 'deliver',
     url: 'deliver',
     name: "deliver",
     bgColor: "brown"
   }, {
     id: 0,
-      title: 'crown',
+    title: 'crown',
     url: 'crown',
     name: "crown",
     bgColor: "#ed1c24"
   }, {
     id: 0,
-      title: 'musicfill',
+    title: 'musicfill',
     url: "musicfill",
     name: "musicfill",
     bgColor: "#ec008c"
@@ -100,15 +103,15 @@ export default {
     remain: 99
   }, {
     id: 0,
-      url: 'http://p98.pstatp.com/large/pgc-image/153855704293169e01166e9',
-      title: '星辰变以一个庞大的修真世界为背景，讲述了主角秦羽不甘于没落、努力修炼跨越先天不足的劣势，一步步踏上强者之路，最终成为鸿蒙掌控者的故事',
+    url: 'http://p98.pstatp.com/large/pgc-image/153855704293169e01166e9',
+    title: '星辰变以一个庞大的修真世界为背景，讲述了主角秦羽不甘于没落、努力修炼跨越先天不足的劣势，一步步踏上强者之路，最终成为鸿蒙掌控者的故事',
     price: 555,
     origin_price: 999,
     remain: 66
   }, {
     id: 0,
-      url: 'http://p3.pstatp.com/large/pgc-image/1528116186201cc37c78550',
-      title: '海贼王讲述了路飞和好友，他们携手一同展开充满传奇色彩的大冒险',
+    url: 'http://p3.pstatp.com/large/pgc-image/1528116186201cc37c78550',
+    title: '海贼王讲述了路飞和好友，他们携手一同展开充满传奇色彩的大冒险',
     price: 666,
     origin_price: 888,
     remain: 22
@@ -132,8 +135,8 @@ export default {
     title: '网球王子'
   }, {
     id: 0,
-    url: 'http://p3.pstatp.com/large/pgc-image/1528116186201cc37c78550',
-    title: '海贼王2'
+    url: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1546086678531&di=082c58d0031ddc6c5e043c74d7184790&imgtype=0&src=http%3A%2F%2Fimgq.duitang.com%2Fuploads%2Fitem%2F201407%2F03%2F20140703094726_JvWyH.png',
+    title: '火影'
   }, {
     id: 0,
     url: 'http://i.shangc.net/2018/0513/20180513012805901.jpg',
@@ -145,7 +148,7 @@ export default {
   }, {
     id: 0,
     url: 'http://i.shangc.net/2018/0513/20180513012805901.jpg',
-      title: '斗罗大陆3'
+    title: '斗罗大陆3'
   }],
 
   bar_list: [{

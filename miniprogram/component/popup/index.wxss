@@ -1,0 +1,101 @@
+/* component/popup/index.wxss */
+
+/* mask */
+
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+  display: none;
+}
+
+.mask.show {
+  display: block;
+}
+
+.modal-box {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.6s ease-in-out;
+}
+
+/* 底部弹出 */
+
+.modal-box.modal-bottom.hide {
+  bottom: 0;
+  left: 0;
+  transform: translate(0, 100%);
+}
+
+.modal-box.modal-bottom.show {
+  bottom: 0;
+  left: 0;
+  transform: translate(0, 0);
+}
+
+/* 顶部弹出 */
+
+.modal-box.modal-top {
+  top: 0;
+  right: 0;
+  transform: translate(0, -100%);
+}
+
+.modal-box.modal-top.show {
+  top: 0;
+  right: 0;
+  transform: translate(0, 0);
+}
+
+/*  左侧弹出 */
+
+.modal-box.modal-left.hide {
+  top: 0;
+  left: 0;
+  transform: translate(-100%, 0);
+}
+
+.modal-box.modal-left.show {
+  top: 0;
+  left: 0;
+  transform: translate(0, 0);
+}
+
+/* 右侧弹出 */
+
+.modal-box.modal-right.hide {
+  top: 0;
+  right: 0;
+  transform: translate(100%, 0);
+}
+
+.modal-box.modal-right.show {
+  top: 0;
+  right: 0;
+  transform: translate(0, 0);
+}
+
+/* 在中间显示 */
+
+.modal-box.modal-center.hide {
+  top: 50%;
+  left: 50%;
+  /* 必须设置scale(0) 不然会挡住点击 */
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  border-radius: 10rpx;
+}
+
+.modal-box.modal-center.show {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  border-radius: 10rpx;
+}

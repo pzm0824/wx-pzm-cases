@@ -12,6 +12,7 @@ Page({
     ],
     cases:[
       { title: '通告栏', name: 'notice' },
+      { title: '弹出层', name: 'popup' },
       { title: '朋友圈', name: 'shareFriend' },
       { title: '仿share', name: 'share' },
 

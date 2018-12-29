@@ -1,0 +1,91 @@
+<!--pages/myComponentCase/popup/index.wxml-->
+
+<!-- 居中 -->
+<view class='bar solid-bottom'>
+  <view class='bar-left'>
+    <pzm-icon type='icon-titles' color='#5EB95E'></pzm-icon>
+    <text class='success-text text-28'>居中 modal-direction="center"</text>
+  </view>
+</view>
+<view class='doc-main'>
+  <pzm-button size='large' type='success' bindtap='showPopupCenter'>居中</pzm-button>
+</view>
+<pzm-popup class="pzm-popup-center" modal-direction="center">
+  <view slot="content" class="popup-center-content">
+    <image src='http://p3.pstatp.com/large/pgc-image/1528116186201cc37c78550' mode="aspectFill"></image>
+
+    <button bindtap='hidePopup'>关闭</button>
+  </view>
+</pzm-popup>
+
+
+<!-- 底部弹起 -->
+<view class='bar solid-bottom mt-20'>
+  <view class='bar-left'>
+    <pzm-icon type='icon-titles' color='#5EB95E'></pzm-icon>
+    <text class='success-text text-28'>底部弹起 modal-direction="bottom"</text>
+  </view>
+</view>
+<view class='doc-main'>
+  <pzm-button size='large' type='success' bindtap='showPopupBottom'>底部弹起</pzm-button>
+</view>
+<pzm-popup class="pzm-popup-bottom" modal-direction="bottom" >
+  <view slot="content" class="popup-bottom-content">
+    <view class='popup-msg'>
+    <button open-type='share'>分享好友</button>
+    </view>
+    <view class='popup-msg' bindtap="eventDraw">
+      <text>分享到朋友圈</text>
+    </view>
+  </view>
+</pzm-popup>
+
+<!-- 顶部部弹起 -->
+<view class='bar solid-bottom mt-20'>
+  <view class='bar-left'>
+    <pzm-icon type='icon-titles' color='#5EB95E'></pzm-icon>
+    <text class='success-text text-28'>顶部 modal-direction="top"</text>
+  </view>
+</view>
+<view class='doc-main'>
+  <pzm-button size='large' type='success' bindtap='showPopupTop'>顶部弹起</pzm-button>
+</view>
+<pzm-popup class="pzm-popup-top" modal-direction="top" status="hide">
+  <view slot="content" class="popup-top-content">
+    嗨
+  </view>
+</pzm-popup>
+
+
+<!-- 左侧弹起 -->
+<view class='bar solid-bottom mt-20'>
+  <view class='bar-left'>
+    <pzm-icon type='icon-titles' color='#5EB95E'></pzm-icon>
+    <text class='success-text text-28'>左侧弹起 modal-direction="left"</text>
+  </view>
+</view>
+<view class='doc-main'>
+  <pzm-button size='large' type='success' bindtap='showPopupLeft'>左侧弹起</pzm-button>
+</view>
+<pzm-popup class="pzm-popup-left" modal-direction="left">
+  <view slot="content" class="popup-left-content">
+    左侧弹起
+  </view>
+</pzm-popup>
+
+
+<!-- 右侧弹起 -->
+<view class='bar solid-bottom mt-20'>
+  <view class='bar-left'>
+    <pzm-icon type='icon-titles' color='#5EB95E'></pzm-icon>
+    <text class='success-text text-28'>右侧弹起 modal-direction="right"</text>
+  </view>
+</view>
+<view class='doc-main'>
+  <pzm-button size='large' type='success' bindtap='showPopupRight'>右侧弹起</pzm-button>
+</view>
+<pzm-popup class="pzm-popup-right" modal-direction="right">
+  <view slot="content" class="popup-right-content">
+    右侧弹起
+  </view>
+</pzm-popup>

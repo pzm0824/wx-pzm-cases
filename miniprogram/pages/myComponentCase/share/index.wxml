@@ -2,16 +2,17 @@
 
 
 <view wx:if="{{mask_flag}}" bindtap='closeShare' class='mask'></view>
-<view wx:if="{{share_mask}}" class='mask-bottom'>
-  <view class='mask-bottom-left' bindtap="shareOne">
+
+<view class="modal-box bottom-modal {{share_mask?'show':''}}">
+  <view class='modal-box-left' bindtap="shareOne">
     <text class='mask-txt'>分享给好友</text>
   </view>
-  <view class='mask-bottom-left' bindtap="eventDraw">
+  <view class='modal-box-left' bindtap="eventDraw">
     <text>分享到朋友圈</text>
   </view>
 </view>
 
-<view class="mark-share {{share_img_flag==true?'on':''}}">
+<view class="mark-share {{share_img_flag?'show':''}}">
   <image src="{{shareImage}}" class="share-image"></image>
   <pzm-canvas painting="{{painting}}" class="canvasdrawer" bind:getImage="eventGetImage" />
 

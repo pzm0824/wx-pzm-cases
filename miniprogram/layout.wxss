@@ -3,13 +3,14 @@
   flex-wrap: wrap;
 }
 
-
+.flex-center {
+  justify-content: center;
+}
 
 /* bar */
 
 .bar {
   position: relative;
-  margin-top: 20rpx;
   padding: 0 20rpx;
   display: flex;
   height: 90rpx;
@@ -132,7 +133,7 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
   position: relative;
   width: 100%;
   overflow-x: auto;
-  z-index: 888;
+  z-index: 10;
 }
 
 .icon-nav-box .icon-nav {
@@ -182,7 +183,7 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
   background: #fff;
   margin-top: -18rpx;
   height: 20rpx;
-  z-index: 889;
+  z-index: 11;
 }
 
 .icon-bar {
@@ -203,7 +204,6 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
 }
 
 /* =================首页 最新发布中 横向滚动布局============== */
-
 
 .card-x-scroll-box {
   padding: 20rpx 20rpx;
@@ -386,4 +386,35 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
 
 .my-service button::after {
   border: 0;
+}
+
+/*======= 弹出框 ========*/
+
+.popup-center-content {
+  width: 680rpx;
+  height: 400rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+
+.popup-left-content, .popup-right-content {
+  width: 300rpx;
+  height: 100%;
+  background: #fff;
+  text-align: center;
+}
+
+.popup-bottom-content, .popup-top-content {
+  display: flex;
+  width: 100%;
+  height: 300rpx;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.popup-bottom-content .popup-msg, .popup-top-content .popup-msg {
+  flex: 1;
 }

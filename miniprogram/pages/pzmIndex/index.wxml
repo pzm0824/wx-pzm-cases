@@ -37,4 +37,13 @@
 <template is="CardListGrid" data="{{recommend_list}}"></template>
 
 
-
+<!-- 图片广告 -->
+<pzm-popup class="pzm-popup-center" modal-direction="center">
+  <view slot="close" class='close' bindtap="hideAdvertisement">
+    <pzm-icon type='icon-close' size='54' color='#fff'></pzm-icon>
+  </view>
+  <view slot="content" class='popup-center-content'>
+    <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1546086903682&di=a8fce16451b20316da122574ecfebb9d&imgtype=0&src=http%3A%2F%2Fp2.qhimgs4.com%2Ft0124ec23c5eefbdaca.gif' mode='aspactFill'></image>
+    <text class='text-32' bindtap="goAdvertisement">点击开始</text>
+  </view>
+</pzm-popup>

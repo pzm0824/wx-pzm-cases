@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "pzm-popup": "../../../component/popup/index",
+    "pzm-icon": "../../../component/icon/index",
+    "pzm-button": "../../../component/button/index"
+  }
+}

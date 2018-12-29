@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "pzm-icon":"../../component/icon/index",
-    "pzm-notice":"../../component/notice/index"
+    "pzm-icon": "../../component/icon/index",
+    "pzm-notice": "../../component/notice/index",
+    "pzm-popup": "../../component/popup/index"
   }
 }

@@ -4,6 +4,32 @@
 @import '../template/card-list-grid/index';
 @import '../template/card-list-linear/index';
 
-.pzm{
+.pzm {
   font-size: 50rpx !important;
+}
+
+.pzm-popup-center .close {
+  position: absolute;
+  top: -0;
+  right: 0;
+  width: 100rpx;
+  height: 100rpx;
+  z-index: 101;
+  text-align: center;
+  line-height: 100rpx;
+}
+.popup-center-content{
+  height: 500rpx !important;
+}
+.popup-center-content image{
+  height: 400rpx;
+}
+.popup-center-content text{
+  display: block;
+  width: 100%;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  color: #70C043;
+  font-weight: bold;
 }

@@ -28,7 +28,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 9,
+			"current": 10,
 			"list": [
 				{
 					"id": -1,
@@ -73,9 +73,9 @@
 					"query": ""
 				},
 				{
-					"id": -1,
+					"id": 7,
 					"name": "share",
-					"pathName": "pages/share/index",
+					"pathName": "pages/myComponentCase/share/index",
 					"query": ""
 				},
 				{
@@ -87,7 +87,14 @@
 				{
 					"id": -1,
 					"name": "我的",
-					"pathName": "pages/my/index"
+					"pathName": "pages/my/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "弹出框",
+					"pathName": "pages/myComponentCase/popup/index",
+					"query": ""
 				}
 			]
 		}

@@ -125,7 +125,10 @@
 .text-32 {
   font-size: 32rpx !important;
 }
+.text-40{
+    font-size: 40rpx !important;
 
+}
 
 
 .text-price::before {

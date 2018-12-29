@@ -1,4 +1,4 @@
-/* pages/share/index.wxss */
+pages/share/index.wxss
 
 page {
   position: relative;
@@ -14,21 +14,22 @@ page {
   width: 200rpx;
   height: 80rpx;
   transform: translate(-50%, -50%);
+  line-height: 80rpx;
 }
 
 .mask {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 99;
 }
 
-.mask-bottom {
+.modal-box {
   display: flex;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -37,17 +38,29 @@ page {
   align-items: center;
   z-index: 100;
   background-color: #fff;
+  transition: all 0.6s ease-in-out;
 }
 
-.mask-bottom-left {
+.bottom-modal .modal-box-left {
   text-align: center;
   flex: 1;
   border-right: 2rpx solid #f2f2f2;
 }
 
-.mask-bottom-right {
+.bottom-modal .modal-box-right {
   flex: 1;
   text-align: center;
+}
+
+/* 底部弹出 */
+
+.modal-box.bottom-modal {
+  transform: translate(0,100%);
+  /* bottom:-100%;  */
+}
+
+.modal-box.bottom-modal.show {
+  transform: translate(0,0);
 }
 
 .board {
@@ -56,7 +69,7 @@ page {
 }
 
 .mark-share {
-  position: absolute;
+  position: fixed;
   padding: 20rpx 0;
   bottom: 0;
   left: 0;
@@ -66,11 +79,11 @@ page {
   text-align: center;
   height: 1000rpx;
   width: 100%;
-  transform: translate(-100%, 0);
-  transition:all 0.6s ease-in-out 0;
+  transform: translate(0, 100%);
+  transition: all 0.6s ease-in-out 0;
 }
 
-.mark-share.on {
+.mark-share.show {
   transform: translate(0, 0);
 }
 
@@ -78,7 +91,6 @@ page {
   width: 500rpx;
   height: 750rpx;
   margin: 20rpx auto;
-  /* border: 1px solid black; */
 }
 
 .save-img {

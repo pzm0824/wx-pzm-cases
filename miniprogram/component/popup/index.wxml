@@ -1,0 +1,10 @@
+<!--component/popup/index.wxml-->
+
+<view bindtap='hide' class='mask {{status}}'>
+
+</view>
+
+<view style="z-index:{{zIndex}}; background-color:{{bgColor}};height:{{height}};width:{{width}}" class="modal-box modal-{{modalDirection}} {{status}}">
+  <slot name="close"></slot>
+  <slot name="content"></slot>
+</view>
