@@ -19,7 +19,13 @@
   align-items: center;
   justify-content: space-between;
 }
-
+.bar-right-con,.bar-left{
+  display: flex;
+  align-items: center;
+}
+.bar-right-con{
+  padding: 0 20rpx;
+}
 image {
   display: block;
   width: 100%;
@@ -27,6 +33,7 @@ image {
   border-top-left-radius: 10rpx;
   border-top-right-radius: 10rpx;
 }
+
 
 /* =============首页设置 轮播图 swiper 布局================= */
 

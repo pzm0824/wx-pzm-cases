@@ -1,24 +1,14 @@
-// pages/list/index.js
+// pages/moreList/inex.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    elements: [
-      { title: '按钮', name: 'button' },
-      { title: '图标 ', name: 'icon' },
-      { title: '加载', name: 'loading' },
-    ],
-    cases:[
-      { title: '导航栏', name: 'nav' },
-
-      { title: '通告栏', name: 'notice' },
-      { title: '弹出层', name: 'popup' },
-      { title: '朋友圈', name: 'shareFriend' },
-      { title: '仿share', name: 'share' },
-
-    ]
+    scroll_left: 0, //	设置横向滚动条位置
+    nav_list: ['全部', '火影忍者', '海贼王', '斗罗大陆', '网球王子', '星辰变', '妖神记', '魔道祖师', '武庚记', '武动乾坤', '奥特曼'],
+    tabCur: 0,
+    detail_x: 30,
   },
 
   /**
@@ -75,5 +65,15 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+
+  // 导航栏选中
+  tabSelect(e) {
+    console.log(e)
+    this.setData({
+      tabCur: e.currentTarget.dataset.index,
+      scroll_left: (e.currentTarget.dataset.index - 1) * 90, //90 根据item的width改变
+      detail_x: (e.currentTarget.dataset.index) * 90 + 30
+    })
+  },
 })

@@ -6,7 +6,7 @@
   color: #4b566a;
 }
 .text-gray{
-  color: #B5ABAA !important;
+  color: #656565 !important;
 }
 
 .text-red, .line-red, .lines-red {

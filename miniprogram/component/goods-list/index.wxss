@@ -23,7 +23,6 @@
 
 .sm.btn {
   font-size: 24rpx;
-  height: 50rpx;
   padding: 10rpx 20rpx;
 }
 

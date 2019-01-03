@@ -1,0 +1,43 @@
+/* pages/moreList/inex.wxss */
+
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav-list {
+  position: relative;
+  white-space: nowrap;
+  background-color: #fff;
+}
+
+.nav-item {
+  position: relative;
+  display: inline-block;
+  height: 45px;
+  line-height: 45px;
+  width: 90px;
+  background-color: #fff;
+  text-align: center;
+  font-size: 14px;
+}
+
+.nav-item.cur {
+  color: #1aad19;
+}
+
+.border {
+  position: absolute;
+  bottom: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #1aad19;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+image{
+  border-radius: 10rpx;
+}

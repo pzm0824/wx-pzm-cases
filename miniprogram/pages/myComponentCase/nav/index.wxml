@@ -1,0 +1,18 @@
+<!--pages/moreList/inex.wxml-->
+<view>
+  <scroll-view scroll-x="true" scroll-left="{{scroll_left}}" scroll-with-animation="true">
+
+    <view class='nav-list'>
+      <block wx:for="{{nav_list}}" wx:key>
+        <view class="nav-item {{tabCur==index?'cur':''}}" data-index="{{index}}" bindtap='tabSelect'>
+          {{item}}
+
+        </view>
+      </block>
+      <view class='border' style='left:{{detail_x}}px'>
+
+      </view>
+    </view>
+
+  </scroll-view>
+</view>

@@ -28,7 +28,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 10,
+			"current": 11,
 			"list": [
 				{
 					"id": -1,
@@ -95,6 +95,11 @@
 					"name": "弹出框",
 					"pathName": "pages/myComponentCase/popup/index",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "更多列表",
+					"pathName": "pages/moreList/inex"
 				}
 			]
 		}

@@ -1,13 +1,13 @@
 <template name="Bar">
-  <view class='bar solid-bottom'>
+  <view class='bar solid-bottom mt-20'>
     <view class='bar-left'>
-      <pzm-icon type='icon-titles' color='#5EB95E'></pzm-icon>
+      <pzm-icon type='icon-titles'  color='#5EB95E'></pzm-icon>
       <text class='success-text text-28'>{{name}}</text>
     </view>
     <view class='bar-right'>
-      <navigator url=''>
+      <navigator url='pages/moreList/inex' class='bar-right-con' hover-class="none">
         <text class='text-24 text-gray'>更多</text>
-        <pzm-icon type='icon-right' color='#B5ABAA'></pzm-icon>
+        <pzm-icon type='icon-right'  color='#656565'></pzm-icon>
       </navigator>
     </view>
   </view>

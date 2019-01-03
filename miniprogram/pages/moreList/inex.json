@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "pzm-card": "../../component/goods-list/index"
+  }
+}

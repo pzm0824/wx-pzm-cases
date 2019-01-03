@@ -36,6 +36,10 @@
 <template is="Bar" data="{{...bar_list[1]}}"></template>
 <template is="CardListGrid" data="{{recommend_list}}"></template>
 
+<!-- loading end -->
+<view class='doc-main'>
+  <pzm-loading is-end="{{true}}" text="我是有底线的哦"></pzm-loading>
+</view>
 
 <!-- 图片广告 -->
 <pzm-popup class="pzm-popup-center" modal-direction="center">

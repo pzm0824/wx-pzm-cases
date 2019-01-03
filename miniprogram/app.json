@@ -7,13 +7,15 @@
     "pages/cart/index",
     "pages/my/index",
     "pages/order/index",
+    "pages/moreList/inex",
     "pages/myComponentCase/button/index",
     "pages/myComponentCase/icon/index",
     "pages/myComponentCase/loading/index",
     "pages/myComponentCase/shareFriend/index",
     "pages/myComponentCase/share/index",
     "pages/myComponentCase/notice/index",
-    "pages/myComponentCase/popup/index"
+    "pages/myComponentCase/popup/index",
+    "pages/myComponentCase/nav/index"
   ],
   "window": {
     "backgroundColor": "#fff",

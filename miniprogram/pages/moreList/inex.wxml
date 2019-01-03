@@ -1,0 +1,24 @@
+<!--pages/moreList/inex.wxml-->
+<view class='fixed'>
+  <scroll-view scroll-x="true" scroll-left="{{scroll_left}}" scroll-with-animation="true">
+
+    <view class='nav-list'>
+      <block wx:for="{{nav_list}}" wx:key>
+        <view class="nav-item {{tabCur==index?'cur':''}} solid-bottom" data-index="{{index}}" bindtap='tabSelect'>
+          {{item.title}}
+
+        </view>
+      </block>
+      <view class='border' style='left:{{detail_x}}px'>
+
+      </view>
+    </view>
+
+  </scroll-view>
+</view>
+<view style='margin-top:45px'>
+  <scroll-view scroll-y style="height: {{winH}}rpx;" bindscroll="scrollList">
+    <pzm-card wx:for="{{goods_list}}" wx:key="{{index}}" strongT="{{item.strongT}}" title='{{item.title}}' des='{{item.des}}' img_url="{{item.img_url}}" now_price="{{item.now_price}}" old_price="{{item.old_price}}" bind:click='buy' data-base='{{item}}'>
+    </pzm-card>
+  </scroll-view>
+</view>
