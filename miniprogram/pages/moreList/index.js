@@ -25,7 +25,7 @@ Page({
       success: (res) => {
         console.log(res, 'res')
         this.setData({
-          winH: (res.windowHeight - 45) * 2
+          winH: (res.windowHeight - 45) 
         })
       },
     })
@@ -96,7 +96,7 @@ Page({
   },
 
   getSelctList(e) {
-    console.log(e, 'eee')
+    // console.log(e, 'eee')
     // wx.showModal({
     //   title: "导航",
     //   content:e._relatedInfo.anchorRelatedText

@@ -5,7 +5,7 @@
       <text class='success-text text-28'>{{name}}</text>
     </view>
     <view class='bar-right'>
-      <navigator url='pages/moreList/inex' class='bar-right-con' hover-class="none">
+      <navigator url='/pages/moreList/index' class='bar-right-con' hover-class="none">
         <text class='text-24 text-gray'>更多</text>
         <pzm-icon type='icon-right'  color='#656565'></pzm-icon>
       </navigator>
