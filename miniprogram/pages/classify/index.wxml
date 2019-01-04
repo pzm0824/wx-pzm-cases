@@ -63,7 +63,15 @@
 
 
   <!-- 右侧 -->
-  <scroll-view scroll-y scroll-into-view="{{scView}}" scroll-with-animation bindscroll='rigConScr' bindscrolltolower='scrLower' lower-threshold='20px' class='con-wrap-boxRight' style='height:{{scrHeight}}'>
+  <scroll-view
+   scroll-y 
+   scroll-into-view="{{scView}}" 
+   scroll-with-animation 
+   bindscroll='rigConScr' 
+   bindscrolltolower='scrLower' 
+   lower-threshold='20px' 
+   class='con-wrap-boxRight' 
+   style='height:{{scrHeight}}'>
     <view class='con-wrap-boxRight-item' wx:for="{{searchContent}}" wx:key id='c{{index}}'>
       <text class='left-title'>{{item.title}}</text>
       <navigator url='../checkAll/checkAll?datas={{item.title}}' class='rig'>

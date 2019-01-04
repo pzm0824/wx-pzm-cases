@@ -37,7 +37,7 @@
         "selectedIconPath": "images/home-cur.png"
       },
       {
-        "pagePath": "pages/class/index",
+        "pagePath": "pages/classify2/index",
         "text": "分类",
         "iconPath": "images/class.png",
         "selectedIconPath": "images/class-cur.png"
