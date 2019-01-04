@@ -28,7 +28,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 11,
+			"current": 14,
 			"list": [
 				{
 					"id": -1,
@@ -99,7 +99,25 @@
 				{
 					"id": -1,
 					"name": "更多列表",
-					"pathName": "pages/moreList/inex"
+					"pathName": "pages/moreList/inex",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "分类",
+					"pathName": "pages/class/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "分类2",
+					"pathName": "pages/classify/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "分类3",
+					"pathName": "pages/classify2/index"
 				}
 			]
 		}

@@ -8,6 +8,8 @@
     "pages/my/index",
     "pages/order/index",
     "pages/moreList/index",
+    "pages/classify/index",
+    "pages/classify2/index",
     "pages/myComponentCase/button/index",
     "pages/myComponentCase/icon/index",
     "pages/myComponentCase/loading/index",
