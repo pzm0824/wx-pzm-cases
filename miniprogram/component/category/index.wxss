@@ -1,0 +1,203 @@
+/* component/category/index.wxss */
+
+/* 主体内容 */
+
+.category-wrapper {
+  display: flex;
+  border-top: 2rpx solid #e5e5e5;
+  width: 100%;
+  font-size: 30rpx;
+}
+
+/* 左侧 */
+
+.category-left {
+  width: 186rpx;
+}
+
+.category-left-item {
+  width: 186rpx;
+  height: 110rpx;
+  line-height: 110rpx;
+  text-align: center;
+}
+
+/* 右侧 */
+
+.category-right {
+  flex: 1;
+  background-color: #fff;
+}
+
+.category-right-tt {
+  display: flex;
+  padding: 0 40rpx;
+  height: 110rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category-banner {
+  margin: 0 auto;
+  margin-bottom: 40rpx;
+  width: 520rpx;
+  height: 180rpx;
+}
+
+.category-right-con {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.category-children-item {
+  margin-bottom: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  width: 33.3%;
+  justify-content: center;
+}
+
+.category-children-text {
+  height: 60rpx;
+  line-height: 60rpx;
+  width: 120rpx;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 26rpx;
+  color: #242424;
+}
+
+image {
+  border-radius: 10rpx;
+}
+
+/* 缓冲 */
+
+.pzm-card {
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+
+.pzm-card-con {
+  position: relative;
+  border-radius: 10rpx;
+}
+
+
+.pzm-card.pzm-card-category {
+  padding: 0;
+}
+
+.pzm-card-category .pzm-card-con {
+  display: flex;
+  border-radius: 0;
+}
+
+.pzm-card-category .pzm-card-loading {
+  padding: 0;
+}
+
+.pzm-card-category .pzm-card-loading-block {
+  margin: 0;
+}
+
+.pzm-card-category-left {
+  width: 180rpx;
+  background-color: #efefef;
+}
+
+.card-category-left-list {
+  display: flex;
+  height: 110rpx;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.loading-text {
+  display: block;
+  height: 40rpx;
+  width: 80rpx;
+  background: linear-gradient(90deg, rgba(207, 216, 220, 0.2), rgba(207, 216, 220, 0.4), rgba(207, 216, 220, 0.2));
+  background-size: 500% 500%;
+  animation: loading 2s ease infinite;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pzm-card-category-right {
+  flex: 1;
+  background-color: #fff;
+}
+
+.card-category-list {
+  margin-top: 40rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pzm-card-category .pzm-card-category-img {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.pzm-card-category .pzm-card-category-text {
+  margin: 20rpx 0;
+  width: 80rpx;
+  height: 30rpx;
+}
+
+.pzm-card-shadow {
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+  border-color: rgba(0, 0, 0, 0.09);
+}
+
+.pzm-card-loading {
+  padding: 20rpx 30rpx;
+  /* background-color: orange; */
+  box-sizing: border-box;
+}
+
+.pzm-card-loading-block {
+  display: block;
+  position: relative;
+  height: 30rpx;
+  margin: 8rpx 10rpx;
+  border-radius: 4rpx;
+  background: linear-gradient(90deg, rgba(207, 216, 220, 0.2), rgba(207, 216, 220, 0.4), rgba(207, 216, 220, 0.2));
+  background-size: 500% 500%;
+  animation: loading 2s ease infinite;
+}
+
+@keyframes loading {
+  0%, to {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.card-loading-category-tt {
+  margin: 0 40rpx;
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-loading-category-tt .left {
+}
+
+.card-loading-category-tt .right {
+}
+
+

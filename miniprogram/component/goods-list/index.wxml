@@ -2,7 +2,12 @@
   <slot name='before'></slot>
 
   <view class='goods-list-main'>
-    <image src='{{img_url}}' mode='aspectFill' class='goods-list-img'></image>
+    <image 
+      src='{{img_url}}' 
+      mode='aspectFill'
+      lazy-load 
+      class='goods-list-img'>
+    </image>
     <view class='goods-list-text'>
       <view class='goods-list-top'>
         <view class='text-lg text-two-line'>【{{strongT}}】{{title}} </view>

@@ -1,6 +1,8 @@
 // pages/classify2/index.js
-var searchTitle = ['女装', '鞋包', '母婴', '男装', '内衣', '食品', '百货', '美女', '手机', '电器', '家纺', '家具', '电脑', '充值'];
+const mock = require("../../mock/category.js")
 
+<<<<<<< HEAD
+=======
 var searchContent = [
   {
     title: '女装',
@@ -199,33 +201,97 @@ var searchContent = [
     ]
   }
 ];
+>>>>>>> 698f9dadc4b724e1a5a5282a03f008f228de9d29
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    searchTitle: searchTitle,
-    searchContent: searchContent,
-    categoryHeight: 0,
-    categoryCur:0,
-    scView: 'c0',
-    scrollTop: '0',
-
+    categoryTitle: [],
+    categoryContent: mock.default.categoryContent,
+    scrollHeight: 0,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
+<<<<<<< HEAD
+    let windowHeight = wx.getSystemInfoSync().windowHeight // 屏幕的高度
+    let windowWidth = wx.getSystemInfoSync().windowWidth // 屏幕的宽度
+    this.setData({
+      scrollHeight: windowHeight * 750 / windowWidth  - 82 +'rpx'
+    })
+    
+    let myCategoryTitle = []
+    this.data.categoryContent.forEach(item=>{
+      myCategoryTitle.push(item.name)
+    })
+    this.setData({
+      categoryTitle: myCategoryTitle
+=======
     console.log(wx.getSystemInfoSync(), 'wx.getSystemInfoSync()')
     const ratio = wx.getSystemInfoSync().windowHeight * 750 / wx.getSystemInfoSync().windowWidth
     console.log(ratio)
     this.setData({
       scrHeight: ratio  - 82 + 'rpx',
+>>>>>>> 698f9dadc4b724e1a5a5282a03f008f228de9d29
     })
+
   },
 
+<<<<<<< HEAD
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function() {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function() {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function() {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function() {
+
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function() {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function() {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function() {
+
+  },
+
+=======
  
   // 左侧当前选中时 文字高亮
   categoryLeftSelect(e) {
@@ -276,4 +342,5 @@ Page({
       })
     }).exec();
   },
+>>>>>>> 698f9dadc4b724e1a5a5282a03f008f228de9d29
 })

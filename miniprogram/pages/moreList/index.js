@@ -1,7 +1,7 @@
 // pages/moreList/inex.js
 
 const mock = require('../../mock/nav.js')
-
+const category = require("../../mock/category.js")
 Page({
 
   /**
@@ -9,7 +9,7 @@ Page({
    */
   data: {
     scroll_left: 0, //	设置横向滚动条位置
-    nav_list: mock.default.nav_list01,
+    nav_list: [],
     tabCur: 0,
     detail_x: 30,
     winH: 0,
@@ -23,23 +23,33 @@ Page({
 
     wx.getSystemInfo({
       success: (res) => {
-        console.log(res, 'res')
         this.setData({
           winH: (res.windowHeight - 45) 
         })
       },
     })
 
-    this.setData({
-
-    })
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function() {
-
+    let navList = [{
+      title:"全部",
+      val:0
+    }]
+    category.default.categoryContent.forEach(item => {
+      navList.push({
+        title: item.name,
+        val: item.id
+      })
+    })
+    console.log(navList)
+    this.setData({
+      nav_list: navList
+    })
+ 
   },
 
   /**

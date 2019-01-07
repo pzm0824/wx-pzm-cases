@@ -1,5 +1,6 @@
 /* pages/classify2/index.wxss */
 
+
 /* 搜索区 */
 page {
   background-color: #fff;
@@ -20,7 +21,9 @@ page {
   text-align: center;
   background-color: #efefef;
 }
-
+.search-con text{
+  color: #666;
+}
 /* 主体内容 */
 
 .category-wrapper {
@@ -34,7 +37,10 @@ page {
 .category-left {
   /* height: 600px; */
   width: 186rpx;
+<<<<<<< HEAD
+=======
   /* background-color: #fff; */
+>>>>>>> 698f9dadc4b724e1a5a5282a03f008f228de9d29
 }
 
 .category-left-item {
@@ -42,24 +48,31 @@ page {
   height: 110rpx;
   line-height: 110rpx;
   text-align: center;
+<<<<<<< HEAD
+  background-color: #efefef;
+}
+.category-left-item.cur {
+  background-color:#fff;
+=======
   background-color:#efefef;
 }
 .category-left-item.cur{
     background-color: #fff;
 
+>>>>>>> 698f9dadc4b724e1a5a5282a03f008f228de9d29
 }
 .category-left-item.cur text{
   color: red;
 }
+
 /* 右侧 */
 
 .category-right {
   flex: 1;
-  /* height: 600px; */
   background-color: #fff;
 }
 .category-right-tt{
-  padding: 20rpx;
+  padding: 40rpx;
   display: flex;
   justify-content: space-between;
 }
@@ -74,6 +87,13 @@ page {
 .category-children-text{
   height: 60rpx;
   line-height: 60rpx;
-  width: 100%;
+  width: 120rpx;
   text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+image{
+  border-radius: 10rpx;
 }

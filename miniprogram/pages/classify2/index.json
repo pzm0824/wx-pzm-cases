@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "pzm-category":"../../component/category/index"
+  }
 }

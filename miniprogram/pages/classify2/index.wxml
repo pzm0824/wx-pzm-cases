@@ -1,9 +1,14 @@
+
+
 <view class='search-box'>
   <view class='search-con'>
-
+    <text>请输入您要搜索的商品名</text>
   </view>
 </view>
 
+<<<<<<< HEAD
+
+=======
 <view class='category-wrapper'>
 
   <!-- 1.左侧 -->
@@ -70,5 +75,14 @@
       </view>
     </block>
   </scroll-view>
+>>>>>>> 698f9dadc4b724e1a5a5282a03f008f228de9d29
 
-</view>
+<pzm-category
+  categoryTitle="{{categoryTitle}}" 
+  categoryContent="{{categoryContent}}" 
+  scrollHeight="{{scrollHeight}}"
+  selectedColor="#1AAD19"
+  url="/pages/index/index"
+  moreUrl="/pages/moreList/index"
+  errBanner="http://pic1.win4000.com/wallpaper/3/543c9f65433d0.jpg"
+  ></pzm-category>

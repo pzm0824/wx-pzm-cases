@@ -1,0 +1,11 @@
+<!--pages/myComponentCase/category/index.wxml-->
+
+
+
+<pzm-category
+  categoryTitle="{{categoryTitle}}" 
+  categoryContent="{{categoryContent}}" 
+  scrollHeight="{{scrollHeight}}"
+  selectedColor="#1AAD19"
+  showBanner="{{true}}"
+  ></pzm-category>

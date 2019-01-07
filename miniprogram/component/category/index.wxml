@@ -1,0 +1,124 @@
+
+ <view class="pzm-card pzm-card-category" hidden="{{showCategory}}">
+  <view  class='pzm-card-con pzm-card-shadow pzm-card-loading' style='height:{{scrollHeight}}'>
+    <view class='pzm-card-category-left'>
+      <view class='flex card-category-left-list'>
+        <text class='loading-text'></text>
+      </view>
+    </view>
+
+    <scroll-view scroll-y="true" class='pzm-card-category-right' style='height:{{scrollHeight}}'>
+      <view class="card-loading-category-tt">
+        <view class='left loading-text '>
+       
+        </view>
+        <view class='right loading-text'>
+       
+        </view>
+      </view>
+      <view class='flex'>
+        <block wx:for="{{list}}" wx:key>
+          <view class='card-category-list' style='width:33%'>
+            <view class="pzm-card-loading-block pzm-card-category-img m-xs">
+
+            </view>
+            <view class="pzm-card-loading-block pzm-card-category-text m-xs">
+
+            </view>
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+
+  </view>
+ </view>
+
+  <view class='category-wrapper' hidden="{{!showCategory}}">
+  <!-- 1.左侧 -->
+    <scroll-view 
+      scroll-y="true" 
+      scroll-with-animation
+      scroll-top="{{scrollTop}}" 
+      class='category-left'
+      style="height:{{scrollHeight}}">
+      <block wx:for="{{categoryTitle}}" wx:key>
+        <view 
+          id="{{index}}"
+          bindtap='categoryLeftSelect'
+          bindtap='categoryLeftSelect'
+          class="category-left-item  {{categoryCur == index ? 'cur' : ''}}" 
+          style="background-color:{{categoryCur == index ? selectedbgColor : bgColor}}" >
+          <text
+            id="{{index}}" 
+            catchtap='categoryLeftSelect'
+            style="color:{{categoryCur == index ? selectedColor : color}}">{{item}}
+            </text>
+        </view>
+      </block>
+    </scroll-view>
+
+    <!-- 1.右侧 -->
+
+    <scroll-view 
+      scroll-y="true"  
+      scroll-with-animation
+      scroll-into-view="{{scView}}"
+      bindscroll='categoryRightScroll' 
+      class='category-right'
+      style="height:{{scrollHeight}}">
+        <block wx:for="{{categoryContent}}" wx:key>
+          <!-- 注意这里的id -->
+          <view class='category-right-item' id='c{{index}}'>
+            <view class='category-right-tt'>
+              <text class='left-title'>{{item.name}}</text>
+
+              <!--更多跳转  根据自己跳转页面修改 url-->
+              <navigator url="{{moreUrl}}?category_id={{item.id}}">
+                <text style="color:#656565">查看全部</text>
+              </navigator>
+            </view>
+            
+            <!-- 一级分类banner -->
+            <block wx:if="{{showBanner}}">
+              <view class='category-banner'>
+                <image
+                  wx:if="{{item.image}}"
+                  src="{{item.image}}"
+                  mode="aspectFill"
+                  lazy-load>
+                </image>
+                <image
+                  wx:else
+                  src="{{errBanner}}"
+                  mode="aspectFill"
+                  lazy-load>
+                </image>
+              </view>
+            </block>
+
+            <view class='category-right-con'>
+              <block 
+                wx:for="{{item.children}}" 
+                wx:for-item="childrenItem" 
+                wx:for-index="childrenIndex" 
+                wx:key>
+                <!--图片item跳转  根据自己跳转页面修改 url-->
+                <navigator
+                  class='category-children-item' 
+                  url='{{url}}?category_id{{childrenItem.id}}&category_name={{childrenItem.name}}' 
+                  hover-class='none'>      
+                    <image
+                      mode="aspectFill"
+                      lazy-load
+                      src="{{childrenItem.image}}"
+                      style='height:50px;width:50px'>
+                    </image>
+                    <view class='text-24 category-children-text'>{{childrenItem.name}}</view>
+                </navigator>
+              </block>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+
+  </view>

@@ -4,6 +4,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    strongT:''
   },
 
   /**
@@ -41,8 +42,11 @@ Page({
         img_url: 'http://image.weilanwl.com/img/4x4.jpg',
         now_price: 0.1,
         old_price: 999
-      }]
+      }],
+      strongT: options.category_name
     })
+    
+    console.log(options.category_name,'index')
   },
   //获取到当前列表的数据  在列表上加上  data-base='{{item}}' 然后打印数据
   buy(e) {

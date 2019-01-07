@@ -1,31 +1,33 @@
-// pages/list/index.js
+// pages/myComponentCase/category/index.js
+const mock = require("../../../mock/category.js")
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    elements: [
-      { title: '按钮', name: 'button' },
-      { title: '图标 ', name: 'icon' },
-      { title: '加载', name: 'loading' },
-    ],
-    cases:[
-      { title: '导航栏', name: 'nav' },
-      { title: '仿拼多多分类', name: 'category'},
-      { title: '通告栏', name: 'notice' },
-      { title: '弹出层', name: 'popup' },
-      { title: '朋友圈', name: 'shareFriend' },
-      { title: '仿share', name: 'share' },
-
-    ]
+    categoryTitle: [],
+    categoryContent: mock.default.categoryContent,
+    scrollHeight: 0,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let windowHeight = wx.getSystemInfoSync().windowHeight // 屏幕的高度
+    let windowWidth = wx.getSystemInfoSync().windowWidth // 屏幕的宽度
+    this.setData({
+      scrollHeight: windowHeight * 750 / windowWidth  + 'rpx'
+    })
+    let myCategoryTitle = []
+    this.data.categoryContent.forEach(item => {
+      myCategoryTitle.push(item.name)
+    })
+    this.setData({
+      categoryTitle: myCategoryTitle
+    })
   },
 
   /**

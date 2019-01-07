@@ -42,7 +42,7 @@
 }
 
 .text-lg {
-  font-size: 32rpx;
+  font-size: 30rpx;
 }
 
 .gray-text {
