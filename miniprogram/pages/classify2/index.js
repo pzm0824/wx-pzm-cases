@@ -1,8 +1,5 @@
 // pages/classify2/index.js
 const mock = require("../../mock/category.js")
-
-<<<<<<< HEAD
-=======
 var searchContent = [
   {
     title: '女装',
@@ -201,7 +198,6 @@ var searchContent = [
     ]
   }
 ];
->>>>>>> 698f9dadc4b724e1a5a5282a03f008f228de9d29
 Page({
 
   /**
@@ -217,7 +213,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-<<<<<<< HEAD
     let windowHeight = wx.getSystemInfoSync().windowHeight // 屏幕的高度
     let windowWidth = wx.getSystemInfoSync().windowWidth // 屏幕的宽度
     this.setData({
@@ -228,20 +223,14 @@ Page({
     this.data.categoryContent.forEach(item=>{
       myCategoryTitle.push(item.name)
     })
-    this.setData({
-      categoryTitle: myCategoryTitle
-=======
     console.log(wx.getSystemInfoSync(), 'wx.getSystemInfoSync()')
-    const ratio = wx.getSystemInfoSync().windowHeight * 750 / wx.getSystemInfoSync().windowWidth
-    console.log(ratio)
     this.setData({
-      scrHeight: ratio  - 82 + 'rpx',
->>>>>>> 698f9dadc4b724e1a5a5282a03f008f228de9d29
+      categoryTitle: myCategoryTitle,
+ 
     })
 
   },
 
-<<<<<<< HEAD
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -291,7 +280,6 @@ Page({
 
   },
 
-=======
  
   // 左侧当前选中时 文字高亮
   categoryLeftSelect(e) {
@@ -342,5 +330,4 @@ Page({
       })
     }).exec();
   },
->>>>>>> 698f9dadc4b724e1a5a5282a03f008f228de9d29
 })

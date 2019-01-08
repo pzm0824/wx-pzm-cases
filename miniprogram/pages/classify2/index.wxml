@@ -6,76 +6,7 @@
   </view>
 </view>
 
-<<<<<<< HEAD
 
-=======
-<view class='category-wrapper'>
-
-  <!-- 1.左侧 -->
-
-  <scroll-view 
-    scroll-y="true" 
-    scroll-with-animation
-    scroll-top="{{scrollTop}}px" 
-    class='category-left'
-    style="height:{{scrHeight}}"
-    >
-    <block wx:for="{{searchTitle}}" wx:key>
-      <view 
-        class="category-left-item {{categoryCur == index ? 'cur' : ''}}" 
-        data-index="{{index}}"
-        catchtap='categoryLeftSelect'
-        id="{{index}}"
-
-      >
-        <text id="{{index}}" bindtap='categoryLeftSelect'>{{item}}</text>
-      </view>
-    </block>
-
-
-  </scroll-view>
-
-  <!-- 1.右侧 -->
-
-  <scroll-view 
-    scroll-y="true"  
-    scroll-with-animation
-    scroll-into-view="{{scView}}"
-    bindscroll="rigConScr"
-    class='category-right'
-    style="height:{{scrHeight}}"
-  >
-    <block wx:for="{{searchContent}}" wx:key>
-      <view class='category-right-item' id='c{{index}}'>
-         
-        <view class='category-right-tt'>
-           <text class='left-title'>{{item.title}}</text>
-           <navigator url='../checkAll/checkAll?datas={{item.title}}' class='rig'>
-             <text>查看全部</text>
-           </navigator>
-        </view>
-
-        <view class='category-right-con flex'>
-          <block 
-            wx:for="{{item.content}}" 
-            wx-for:item="childrenItem" 
-            wx-for:index="childrenIndex" 
-            wx:key       
-          >
-            <view  class='category-children-item'>
-              <image
-                mode="aspectFill" 
-                src="http://p3.pstatp.com/large/pgc-image/1528116186201cc37c78550"
-                style='height:50px;width:50px'></image>
-               <view class='text-24 category-children-text'>我的</view>
-            </view>
-            
-          </block>
-        </view>
-      </view>
-    </block>
-  </scroll-view>
->>>>>>> 698f9dadc4b724e1a5a5282a03f008f228de9d29
 
 <pzm-category
   categoryTitle="{{categoryTitle}}" 
