@@ -1,0 +1,22 @@
+<!--pages/testShare/index.wxml-->
+<pzm-share bindclose="close" userInfo="{{userInfo}}" visible="{{visible}}" />
+
+<view class='userinfo'>
+  <button 
+    wx:if="{{!hasUserInfo && canIUse}}" 
+    open-type="getUserInfo" 
+    bindgetuserinfo="getUserInfo"> 获取头像昵称 
+  </button>
+<!-- 用户头像 -->
+
+  <block wx:else>
+    <image
+      src="{{userInfo.avatarUrl}}"
+      mode="aspectFill"
+      bindtap="show"
+      class="userinfo-avatar"
+    ></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+
+  </block>
+</view>

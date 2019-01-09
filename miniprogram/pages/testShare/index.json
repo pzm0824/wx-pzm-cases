@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+        "pzm-share": "../../component/testShare/index"
+  }
+}

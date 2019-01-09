@@ -17,7 +17,8 @@
     "pages/myComponentCase/notice/index",
     "pages/myComponentCase/popup/index",
     "pages/myComponentCase/nav/index",
-    "pages/myComponentCase/category/index"
+    "pages/myComponentCase/category/index",
+    "pages/testShare/index"
   ],
   "window": {
     "backgroundColor": "#fff",

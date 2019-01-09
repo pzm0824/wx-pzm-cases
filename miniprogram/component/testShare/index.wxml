@@ -1,0 +1,11 @@
+<!--component/testShare/index.wxml-->
+<view class="share {{visible ? 'show' : ''}}" wx:if="{{visible}}">
+  <view class='content'>
+    <canvas class='canvas' canvas-id='share' ></canvas>
+    <view class='footer'>
+       <view class="save" bindtap="handleSave">保存到相册</view>
+      <view class="save" bindtap="handleClose">取消</view>
+
+    </view>
+  </view>
+</view>
